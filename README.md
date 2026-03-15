@@ -1,1 +1,0 @@
-# poligraph.github.io
