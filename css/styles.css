@@ -1,0 +1,31 @@
+:root{
+  --main-color: #ffffff;
+  --bg-color: #000000;
+  --number-color: #929292;
+  --border-color: #444444;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+}
+
+.button{
+  color: var(--bg-color);
+  padding: 23px 43px;
+  border: none;
+  border-radius: 82px;
+  display: inline-block;
+  background-color: #fff;
+  text-decoration: none;
+
+font-family: Inter;
+font-weight: 300;
+font-style: Light;
+font-size: 14.12px;
+
+line-height: 16.77px;
+letter-spacing: 0%;
+text-transform: uppercase;
+
+}
