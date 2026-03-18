@@ -8,24 +8,69 @@
 body {
   background-color: var(--bg-color);
   color: var(--main-color);
+
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+line-height: 1.2;
+}
+
+a{
+  text-decoration: none;
+}
+ul {
+  list-style: none;
 }
 
 .button{
+  font-size: 14px;
+  text-transform: uppercase;
+
+  
   color: var(--bg-color);
-  padding: 23px 43px;
+  background-color: #fff;
+  padding: 20px 44px;
   border: none;
   border-radius: 82px;
   display: inline-block;
-  background-color: #fff;
   text-decoration: none;
+}
 
-font-family: Inter;
-font-weight: 300;
-font-style: Light;
-font-size: 14.12px;
 
-line-height: 16.77px;
-letter-spacing: 0%;
-text-transform: uppercase;
+.title{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 300;
+
+}
+
+.sub-title{
+  font-size: 30px;
+  font-weight: 400;
+
+}
+
+.section-text{
+font-size: 16px;
+line-height: 1.2;
+
+
+}
+
+/* ----- Header ----- */
+.menu-item{
+  font-size: 16px;
+  text-transform: uppercase;
+
+
+
+
+}
+/* ----- Hero ----- */
+
+.hero-title{
+font-weight: 400;
+font-size: 98px;
+
 
 }
