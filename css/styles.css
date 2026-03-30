@@ -1,9 +1,11 @@
 :root{
   --main-color: #ffffff;
   --bg-color: #000000;
-  --number-color: #929292;
+  --number-color: #7D7D7D;
   --border-color: #444444;
 }
+
+
 
 body {
   background-color: var(--bg-color);
@@ -12,7 +14,24 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 16px;
-line-height: 1.2;
+  line-height: 1.2;
+
+}
+
+.container{
+  width: 1060px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  margin: 0;
 }
 
 a{
@@ -20,20 +39,24 @@ a{
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .button{
-  font-size: 14px;
-  text-transform: uppercase;
-
-  
-  color: var(--bg-color);
-  background-color: #fff;
-  padding: 20px 44px;
+  display: inline-block;
+  min-width: 239px;
+  padding: 25px 47px;
   border: none;
   border-radius: 82px;
-  display: inline-block;
+  font-size: 14px;
+
+  color: var(--bg-color);
+  background-color: #fff;
+  
   text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 
@@ -47,6 +70,7 @@ ul {
 .sub-title{
   font-size: 30px;
   font-weight: 400;
+  margin-bottom: 32px;
 
 }
 
@@ -58,6 +82,10 @@ line-height: 1.2;
 }
 
 /* ----- Header ----- */
+
+header{
+  margin-bottom: 132px;
+}
 .menu-item{
   font-size: 16px;
   text-transform: uppercase;
@@ -71,6 +99,11 @@ line-height: 1.2;
 .hero-title{
 font-weight: 400;
 font-size: 98px;
+margin-bottom: 80px;
+
+}
 
 
+.hero ul{
+  margin-bottom: 67px;
 }
