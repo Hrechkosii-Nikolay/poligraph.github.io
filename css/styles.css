@@ -1,6 +1,6 @@
 :root{
   --main-color: #ffffff;
-  --bg-color: #000000;
+  --bg-color: #0C0C0E;
   --number-color: #7D7D7D;
   --border-color: #444444;
 }
@@ -23,6 +23,11 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
+}
+
+section{
+  padding-bottom: 70px;
+  padding-top: 70px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -84,7 +89,7 @@ line-height: 1.2;
 /* ----- Header ----- */
 
 header{
-  margin-bottom: 132px;
+
 }
 .menu-item{
   font-size: 16px;
@@ -96,14 +101,57 @@ header{
 }
 /* ----- Hero ----- */
 
-.hero-title{
-font-weight: 400;
-font-size: 98px;
-margin-bottom: 80px;
+.hero{
+  padding-top: 150px;
+  padding-bottom: 130px;
+}
 
+.hero-title{
+  font-weight: 400;
+  font-size: 98px;
+  margin-bottom: 80px;
+  
 }
 
 
 .hero ul{
   margin-bottom: 67px;
 }
+
+.hero-btn{
+ 
+}
+
+
+/* ----- About us ----- */
+.about-us{
+
+}
+
+/* ----- Tools ----- */
+.tools .title{
+  margin-bottom: 95px;
+}
+
+/* ----- Call to Action ----- */
+
+
+/* ----- About service ----- */
+.about-service .title{
+margin-bottom: 72px;
+}
+
+
+
+/* ----- Services ----- */
+.services .title{
+  margin-bottom: 180px;
+}
+
+/* ----- Benefit ----- */
+/* ----- Promo ----- */
+/* ----- Footer ----- */
+
+
+
+
