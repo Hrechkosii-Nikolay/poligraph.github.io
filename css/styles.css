@@ -8,8 +8,8 @@
 
 
 body {
-  background-color: var(--bg-color);
   color: var(--main-color);
+  background-color: var(--bg-color);
 
   font-family: "Inter", sans-serif;
   font-weight: 300;
@@ -19,9 +19,9 @@ body {
 }
 
 .container{
-  width: 1060px;
-  padding-left: 10px;
-  padding-right: 10px;
+  width: 1260px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -41,6 +41,7 @@ p{
 
 a{
   text-decoration: none;
+  color: inherit;
 }
 ul {
   list-style: none;
@@ -75,7 +76,6 @@ ul {
 .sub-title{
   font-size: 30px;
   font-weight: 400;
-  margin-bottom: 32px;
 
 }
 
@@ -88,16 +88,38 @@ line-height: 1.2;
 
 /* ----- Header ----- */
 
-header{
+.logo{
+  margin-right: 150px;
+}
+.main-nav{
+  display: flex;
+  align-items: center;
+}
+
+.menu-list{
+display: flex;
+
+text-transform: uppercase;
+}
+
+
+.menu-item:not(:last-child){
+  margin-right: 0px;
+}
+
+.menu-item .link{
+  display: block;
+  padding: 25px 25px; 
 
 }
-.menu-item{
-  font-size: 16px;
-  text-transform: uppercase;
 
+.menu-item .link:hover,
+.menu-item .link:focus{
+  background-color: #1D1D1D;
+}
 
-
-
+.nav-phone{
+  margin-left: auto;
 }
 /* ----- Hero ----- */
 
@@ -113,13 +135,45 @@ header{
   
 }
 
+.hero .sub-title{
+  margin-bottom: 32px;
+  font-weight: 200;
+  text-transform: uppercase;
 
-.hero ul{
+}
+
+
+.hero-list{
+  display: flex;
   margin-bottom: 67px;
+}
+
+.hero-item{
+  max-width: 130px;
+}
+
+.hero-item:not(:last-child){
+  
+  margin-right: 25px;
+}
+
+.hero-link{
+  display: block;
+
+  padding: 10px;
+}
+
+.hero-link:hover,
+.hero-link:focus{
+  background-color: #1D1D1D;
 }
 
 .hero-btn{
  
+}
+
+.hero-wrapper{
+  margin-left: 275px;
 }
 
 
