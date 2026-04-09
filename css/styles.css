@@ -178,14 +178,45 @@ text-transform: uppercase;
 
 
 /* ----- About us ----- */
-.about-us{
+.about-us-wrapper{
+  display: flex;
+}
 
+.about-us-list{
+  margin-left: auto;
+  max-width: 600px;
+}
+.about-us-list .items:first-child{
+  margin-bottom: 20px;
 }
 
 /* ----- Tools ----- */
 .tools .title{
   margin-bottom: 95px;
 }
+
+.tools-list{
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+
+.tools-list .items{
+  width: 597px;
+  padding: 150px 70px 65px 70px;
+
+  border: 1px solid var(--border-color);
+
+  
+}
+.tools-list .items:last-child{
+  
+  min-width: 100%;
+}
+
+
+
 
 /* ----- Call to Action ----- */
 
