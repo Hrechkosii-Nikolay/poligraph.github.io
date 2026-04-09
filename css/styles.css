@@ -19,7 +19,7 @@ body {
 }
 
 .container{
-  width: 1260px;
+  width: 1140px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -89,7 +89,7 @@ line-height: 1.2;
 /* ----- Header ----- */
 
 .logo{
-  margin-right: 150px;
+  margin-right: 80px;
 }
 .main-nav{
   display: flex;
@@ -203,11 +203,11 @@ text-transform: uppercase;
 
 
 .tools-list .items{
-  width: 597px;
+  width: 537px;
   padding: 150px 70px 65px 70px;
 
   border: 1px solid var(--border-color);
-
+  border-radius: 10px;
   
 }
 .tools-list .items:last-child{
