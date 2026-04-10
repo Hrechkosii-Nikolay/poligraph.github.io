@@ -3,6 +3,8 @@
   --bg-color: #0C0C0E;
   --number-color: #7D7D7D;
   --border-color: #444444;
+
+  --border-radius: 10px ;
 }
 
 
@@ -207,7 +209,7 @@ text-transform: uppercase;
   padding: 150px 70px 65px 70px;
 
   border: 1px solid var(--border-color);
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   
 }
 .tools-list .items:last-child{
@@ -219,21 +221,97 @@ text-transform: uppercase;
 
 
 /* ----- Call to Action ----- */
+.call-to-action .container{
+display: flex;
+}
 
+.call-to-action .wrapper{
+  margin-left: auto;
+}
+
+.call-to-action p{
+  margin-bottom: 30px;
+  font-size: 30px;
+  max-width: 505px;
+}
 
 /* ----- About service ----- */
 .about-service .title{
 margin-bottom: 72px;
 }
+.about-service-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
 
+  padding: 60px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
 
+  /* letter-spacing: 0.7px; */
+  /* text-align: justify; */
+}
+
+.about-service-list .items{
+  max-width: 470px;
+}
 
 /* ----- Services ----- */
+
 .services .title{
   margin-bottom: 180px;
 }
 
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+
+  max-width: 60%;
+  margin-left: auto;
+}
+
+.services-list .items{
+  max-width: 280px;
+}
+
+.services-list-title{
+  margin-bottom: 30px;
+}
+
 /* ----- Benefit ----- */
+.benefit .wrapper{
+  display: flex;
+
+  margin-bottom: 125px;
+}
+
+.benefit-info{
+  max-width: 450px;
+  margin-left: auto;
+}
+
+.benefit-info p:first-child{
+  margin-bottom: 20px;
+}
+
+
+.benefit-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.benefit-list .items{
+  max-width: 345px;
+  min-height: 220px;
+  padding: 60px;
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+
 /* ----- Promo ----- */
 /* ----- Footer ----- */
 
