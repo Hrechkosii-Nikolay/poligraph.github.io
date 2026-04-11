@@ -3,102 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  <title>Перевірка особистого характеру</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link
+  rel="preload"
+  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+  integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/perevirka_osobustogo_haraktery.css">
 </head>
 <body>
   <header>
-    <nav class="container">
-      <a href=""></a>
-      <ul>
-        <li><a href="">Послуги</a></li>
-        <li><a href="">Локаціі в Україні</a></li>
-        <li><a href="">Ціни</a></li>
-        <li><a href="">Про нас</a></li>
-        <li><a href="">Контакти</a></li>
+    <nav class="container main-nav">
+      <a href="./index.html" class="logo">
+        <img src="./img/logo.svg" alt="Логотип компанії">
+      </a>
+      <ul class="menu-list">
+        <li class="menu-item"><a class="link" href="">Послуги</a></li>
+        <li class="menu-item"><a class="link" href="">Локаціі в Україні</a></li>
+        <li class="menu-item"><a class="link" href="">Ціни</a></li>
+        <li class="menu-item"><a class="link" href="">Про нас</a></li>
+        <li class="menu-item"><a class="link" href="">Контакти</a></li>
       </ul>
-      <a href="tel:+380501234567" rel="nofollow">+38 (050) 123-45-67</a>
+      <a class="nav-phone" href="tel:+380501234567" rel="nofollow">+38 (050) 123-45-67</a>
     </nav>
   </header>
   <main>
-    <section>
+    <section class="hero">
       <div class="container">
-        <h1>Перевірка особистого характеру</h1>
-        <p>Отримайте ясність у важливих для вас питаннях.</p>
-        <p>Коли довіра в парі чи родині під питанням, звичайні розмови не завжди дають результат. Перевірка на поліграфі з командою «Червоної лінії» допоможе поставити остаточні крапки над «і» та прояснити обставини.</p>
+        <h1 class="title hero-title">Перевірка<br> особистого характеру</h1>
+        <p class="title hero-sub-title">Отримайте ясність у важливих для вас питаннях.</p>
+        <p class="hero-txt">Коли довіра в парі чи родині під питанням, звичайні розмови не завжди дають результат. Перевірка на поліграфі з командою «Червоної лінії» допоможе поставити остаточні крапки над «і» та прояснити обставини.</p>
         <a class="button" href="">Зв'язатися з нами</a>
       </div>
     </section>
-    <section>
+    <section class="cases">
       <div class="container">
-        <h2>У яких випадках варто пройти перевірку?</h2>
-        <ul>
-          <li>
-            <h3>Підозра на зраду</h3>
-            <p>Встановлення факту подружньої невірності.</p>
+        <h2 class="title">У яких випадках варто пройти перевірку?</h2>
+        <ul class="cases-list">
+          <li class="items">
+            <h3 class="cases-title">Підозра на зраду</h3>
+            <p class="cases-txt">Встановлення факту подружньої невірності.</p>
           </li>
-          <li>
-            <h3>Чесність у відносинах</h3>
-            <p>Виявлення прихованих контактів, обману або подвійного життя.</p>
+          <li class="items">
+            <h3 class="cases-title">Чесність у відносинах</h3>
+            <p class="cases-txt">Виявлення прихованих контактів, обману або подвійного життя.</p>
           </li>
-          <li>
-            <h3>Сімейні конфлікти</h3>
-            <p>Прояснення спірних моментів між близькими.</p>
+          <li class="items">
+            <h3 class="cases-title">Сімейні конфлікти</h3>
+            <p class="cases-txt">Прояснення спірних моментів між близькими.</p>
           </li>
-          <li>
-            <h3>Фінансові суперечки</h3>
-            <p>Перевірка фактів боргів, домашніх крадіжок чи розтрати спільного майна.</p>
+          <li class="items">
+            <h3 class="cases-title">Фінансові суперечки</h3>
+            <p class="cases-txt">Перевірка фактів боргів, домашніх крадіжок чи розтрати спільного майна.</p>
           </li>
-          <li>
-            <h3>Звинувачення у неправомірних діях</h3>
-            <p>Підтвердження невинуватості перед рідними чи знайомими.</p>
+          <li class="items">
+            <h3 class="cases-title">Звинувачення у неправомірних діях</h3>
+            <p class="cases-txt">Підтвердження невинуватості перед рідними чи знайомими.</p>
           </li>
         </ul>
         <a class="button" href="">Зв'язатися з нами</a>
       </div>
     </section>
-    <section>
+    <section class="reasons">
       <div class="container">
-        <h2>Чому поліграф — доречне рішення?</h2>
-        <ul>
-          <li>
-            <h3>Швидкі відповіді</h3>
-            <p>Зазвичай тестування триває 1,5–2 години.</p>
+        <h2 class="title">Чому поліграф — доречне рішення?</h2>
+        <ul class="reasons-list">
+          <li class="reasons-item">
+            <h3 class="reasons-item-title">Швидкі відповіді</h3>
+            <p class="reasons-item-text">Зазвичай тестування триває 1,5–2 години.</p>
           </li>
-          <li>
-            <h3>Об'єктивність</h3>
-            <p>Висока інформативність результатів (орієнтовно 90–95%)</p>
+          <li class="reasons-item">
+            <h3 class="reasons-item-title">Об'єктивність</h3>
+            <p class="reasons-item-text">Висока інформативність результатів (орієнтовно 90–95%)</p>
           </li>
-          <li>
-            <h3>Конфіденційність</h3>
-            <p>Уся інформація залишається закритою для третіх осіб.</p>
+          <li class="reasons-item">
+            <h3 class="reasons-item-title">Конфіденційність</h3>
+            <p class="reasons-item-text">Уся інформація залишається закритою для третіх осіб.</p>
           </li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="process">
       <div class="container">
-        <h2>Як проходить тестування?</h2>
-        <ul>
-          <li>
-            <h3>Консультація</h3>
-            <p>Обговорюємо ситуацію, уточнюємо цілі та формуємо перелік запитань.</p>
+        <h2 class="title">Як проходить тестування?</h2>
+        <ul class="process-list">
+          <li class="process-item">
+            <h3 class="process-item-title">Консультація</h3>
+            <p class="process-item-text">Обговорюємо ситуацію, уточнюємо цілі та формуємо перелік запитань.</p>
           </li>
-          <li>
-            <h3>Перевірка на поліграфі</h3>
-            <p>Проводимо тест за індивідуальним сценарієм.</p>
+          <li class="process-item">
+            <h3 class="process-item-title">Перевірка на поліграфі</h3>
+            <p class="process-item-text">Проводимо тест за індивідуальним сценарієм.</p>
           </li>
-          <li>
-            <h3>Аналіз і висновки</h3>
-            <p>Надаємо детальний звіт із результатами.</p>
+          <li class="process-item">
+            <h3 class="process-item-title">Аналіз і висновки</h3>
+            <p class="process-item-text">Надаємо детальний звіт із результатами.</p>
           </li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="call-to-action">
       <div class="container">
-        <h2>Все ще вагаєтеся?</h2>
-        <p>Зв'яжіться з нами та отримайте безкоштовну консультацію!</p>
+        <h2 class="title">Все ще вагаєтеся?</h2>
+        <p class="call-to-action-text">Зв'яжіться з нами та отримайте безкоштовну консультацію!</p>
         <a class="button" href="">Зв'язатися з нами</a>
       </div>
     </section>
