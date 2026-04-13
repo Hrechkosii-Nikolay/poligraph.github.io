@@ -3,154 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  <title>Бізнес-перевірки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link
+  rel="preload"
+  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+  integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/biznes_perevirka.css">
 </head>
 <body>
   <header>
-    <nav class="container">
-      <a href=""></a>
-      <ul>
-        <li><a href="">Послуги</a></li>
-        <li><a href="">Локаціі в Україні</a></li>
-        <li><a href="">Ціни</a></li>
-        <li><a href="">Про нас</a></li>
-        <li><a href="">Контакти</a></li>
+    <nav class="container main-nav">
+      <a href="./index.html" class="logo">
+        <img src="./img/logo.svg" alt="Логотип компанії">
+      </a>
+      <ul class="menu-list">
+        <li class="menu-item"><a class="link" href="">Послуги</a></li>
+        <li class="menu-item"><a class="link" href="">Локаціі в Україні</a></li>
+        <li class="menu-item"><a class="link" href="">Ціни</a></li>
+        <li class="menu-item"><a class="link" href="">Про нас</a></li>
+        <li class="menu-item"><a class="link" href="">Контакти</a></li>
       </ul>
-      <a href="tel:+380501234567" rel="nofollow">+38 (050) 123-45-67</a>
+      <a class="nav-phone" href="tel:+380501234567" rel="nofollow">+38 (050) 123-45-67</a>
     </nav>
   </header>
   <main>
-    <section>
+    <section class="hero">
       <div class="container">
-        <h1>Бізнес-перевірки</h1>
-        <p>Убережіть компанію від шахрайських схем, витоків даних і нелояльних працівників.</p>
-        <p>Власники та топ-менеджери регулярно мають справу з ризиками, що можуть обернутися фінансовими втратами й ударом по репутації. Тестування на поліграфі в «Червона лінія» допомагає своєчасно виявляти приховані загрози та ухвалювати зважені рішення щодо співробітників, партнерів і ключових фігур бізнесу.</p>
+        <h1 class="title hero-title">Бізнес-перевірки</h1>
+        <p class="title hero-sub-title">Убережіть компанію від шахрайських схем, витоків даних і нелояльних працівників.</p>
+        <p class="hero-txt">Власники та топ-менеджери регулярно мають справу з ризиками, що можуть обернутися фінансовими втратами й ударом по репутації. Тестування на поліграфі в «Червона лінія» допомагає своєчасно виявляти приховані загрози та ухвалювати зважені рішення щодо співробітників, партнерів і ключових фігур бізнесу.</p>
         <a class="button" href="">Зв'язатися з нами</a>
       </div>
     </section>
-    <section>
+    <section class="cases">
       <div class="container">
-        <h2>Коли доречно проводити бізнес-перевірку?</h2>
+        <h2 class="title">Коли доречно проводити бізнес-перевірку?</h2>
         <ul>
-          <li>
-            <h3>Перед підписанням важливих контрактів</h3>
-            <p>Оцінка сумлінності потенційних партнерів або інвесторів, перевірка чесності заяв і намірів.</p>
+          <li class="cases-item">
+            <h3 class="cases-item-title">Перед підписанням важливих контрактів</h3>
+            <p class="cases-item-text">Оцінка сумлінності потенційних партнерів або інвесторів, перевірка чесності заяв і намірів.</p>
           </li>
-          <li>
-            <h3>Добір керівництва</h3>
-            <p>Перевірка топ-менеджерів на лояльність, можливий конфлікт інтересів і фінансову прозорість</p>
+          <li class="cases-item">
+            <h3 class="cases-item-title">Добір керівництва</h3>
+            <p class="cases-item-text">Перевірка топ-менеджерів на лояльність, можливий конфлікт інтересів і фінансову прозорість</p>
           </li>
-          <li>
-            <h3>Внутрішні загрози</h3>
-            <p>Виявлення причетності персоналу до фінансових зловживань, витоків інформації та розкрадання активів</p>
+          <li class="cases-item">
+            <h3 class="cases-item-title">Внутрішні загрози</h3>
+            <p class="cases-item-text">Виявлення причетності персоналу до фінансових зловживань, витоків інформації та розкрадання активів</p>
           </li>
-          <li>
-            <h3>Корпоративні конфлікти</h3>
-            <p>Встановлення ролей у корупційних схемах, змовах чи саботажі</p>
+          <li class="cases-item">
+            <h3 class="cases-item-title">Корпоративні конфлікти</h3>
+            <p class="cases-item-text">Встановлення ролей у корупційних схемах, змовах чи саботажі</p>
           </li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="checks">
       <div class="container">
-        <h2>Що саме перевіряємо на поліграфі?</h2>
-        <ul>
-          <li>
-            <p>наявність фактів зловживання посадовими повноваженнями</p>
+        <h2 class="title">Що саме перевіряємо на поліграфі?</h2>
+        <ul class="checks-list">
+          <li class="checks-item">
+            <p class="checks-text">наявність фактів зловживання посадовими повноваженнями</p>
           </li>
-          <li>
-            <p>розкриття комерційної таємниці</p>
+          <li class="checks-item">
+            <p class="checks-text">розкриття комерційної таємниці</p>
           </li>
-          <li>
-            <p>крадіжки майна й фінансові махінації</p>
+          <li class="checks-item">
+            <p class="checks-text">крадіжки майна й фінансові махінації</p>
           </li>
-          <li>
-            <p>конфлікти інтересів і приховані зв'язки з конкурентами</p>
+          <li class="checks-item">
+            <p class="checks-text">конфлікти інтересів і приховані зв'язки з конкурентами</p>
           </li>
-          <li>
-            <p>реальний рівень лояльності до компанії</p>
+          <li class="checks-item">
+            <p class="checks-text">реальний рівень лояльності до компанії</p>
           </li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="benefits">
       <div class="container">
-        <h2>Переваги бізнес-перевірок на поліграфі</h2>
-        <ul>
-          <li>
-            <p>Захист від фінансових втрат і репутаційних ризиків.</p>
+        <h2 class="title">Переваги бізнес-перевірок на поліграфі</h2>
+        <ul class="benefits-list">
+          <li class="benefits-item">
+            <p class="benefits-text">Захист від фінансових втрат і репутаційних ризиків.</p>
           </li>
-          <li>
-            <p>Зменшення ймовірності шахрайства всередині організації.</p>
+          <li class="benefits-item">
+            <p class="benefits-text">Зменшення ймовірності шахрайства всередині організації.</p>
           </li>
-          <li>
-            <p>Обґрунтовані кадрові рішення</p>
+          <li class="benefits-item">
+            <p class="benefits-text">Обґрунтовані кадрові рішення</p>
           </li>
-          <li>
-            <p>Посилення загальної безпеки бізнесу.</p>
+          <li class="benefits-item">
+            <p class="benefits-text">Посилення загальної безпеки бізнесу.</p>
           </li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="call-to-action">
       <div class="container">
-        <h2>Все ще сумніваєтеся?</h2>
-        <p>Звертайтеся до команди «Червоної лінії» — проконсультуємо безкоштовно.</p>
+        <h2 class="title">Все ще сумніваєтеся?</h2>
+        <p class="call-to-action-text">Звертайтеся до команди «Червоної лінії» — проконсультуємо безкоштовно.</p>
         <a class="button" href="">Зв'язатися з нами</a>
       </div>
     </section>
-    <section>
+    <section class="about-process">
       <div class="container">
-        <h2>Як ми організовуємо бізнес-перевірки</h2>
-        <ul>
-          <li><p>Методика спирається на науковий підхід і забезпечує високу інформативність результатів (орієнтовно 95% за сукупністю індикаторів).</p></li>
-          <li><p>Ми діємо за принципами добровільності, законності, компетентності та конфіденційності.</p></li>
+        <h2 class="title">Як ми організовуємо бізнес-перевірки</h2>
+        <div class="about-process-content">
+          <p lass="about-process-text">Методика спирається на науковий підхід і забезпечує високу інформативність результатів (орієнтовно 95% за сукупністю індикаторів).</p>
+          <p lass="about-process-text">Ми діємо за принципами добровільності, законності, компетентності та конфіденційності.</p>
+        </div>
+      </div>
+    </section>
+    <section class="stages">
+      <div class="container">
+        <h2 class="title">Етапи роботи</h2>
+        <ul class="stages-list">
+          <li class="stages-item">
+            <h3 class="stages-item-title">Підготовка</h3>
+            <p class="stages-item-text">Аналізуємо кейс, визначаємо цілі перевірки, готуємо та погоджуємо перелік запитань.</p>
+          </li>
+          <li class="stages-item">
+            <h3 class="stages-item-title">Попередня консультація</h3>
+            <p class="stages-item-text">Пояснюємо правила, цілі та формат дослідження; оцінюємо стан і готовність респондента.</p>
+          </li>
+          <li class="stages-item">
+            <h3 class="stages-item-title">Тестування на поліграфі</h3>
+            <p class="stages-item-text">Спершу калібруємо обладнання на базові реакції, далі ставимо підготовлені запитання; фізіологічні показники фіксуються спеціальними датчиками. Середня тривалість — близько 2 годин.</p>
+          </li>
+          <li class="stages-item">
+            <h3 class="stages-item-title">Аналітика</h3>
+            <p class="stages-item-text">Експерти опрацьовують дані та формують підсумковий висновок.</p>
+          </li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="faq">
       <div class="container">
-        <h2>Етапи роботи</h2>
-        <ul>
-          <li>
-            <h3>Підготовка</h3>
-            <p>Аналізуємо кейс, визначаємо цілі перевірки, готуємо та погоджуємо перелік запитань.</p>
+        <h2 class="title">Часті запитання</h2>
+        <ul class="faq-list">
+          <li class="faq-item">
+            <h3 class="faq-question">Як поліграф допомагає виявити шахрайство з боку бізнес-партнерів?</h3>
+            <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corporis accusamus eos expedita non nostrum ad distinctio, numquam sequi! Magni maiores nemo saepe, sed magnam consequuntur molestias quisquam odit accusamus!</p>
           </li>
-          <li>
-            <h3>Попередня консультація</h3>
-            <p>Пояснюємо правила, цілі та формат дослідження; оцінюємо стан і готовність респондента.</p>
+          <li class="faq-item">
+            <h3 class="faq-question">Чи доречно використовувати поліграф для оцінки надійності партнерів перед угодою?</h3>
+            <p class="faq-answer">Так. Перевіряються ключові твердження партнера (історія діяльності, фінансові зобов'язання, взаємини з іншими сторонами), щоб виявити приховані мотиви чи факти, здатні негативно вплинути на угоду.</p>
           </li>
-          <li>
-            <h3>Тестування на поліграфі</h3>
-            <p>Спершу калібруємо обладнання на базові реакції, далі ставимо підготовлені запитання; фізіологічні показники фіксуються спеціальними датчиками. Середня тривалість — близько 2 годин.</p>
+          <li class="faq-item">
+            <h3 class="faq-question">Як застосувати поліграф під час підбору керівників?</h3>
+            <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus corporis nobis minus nam perspiciatis eaque unde odio velit! Placeat odit cumque quo nulla consequatur.</p>
           </li>
-          <li>
-            <h3>Аналітика</h3>
-            <p>Експерти опрацьовують дані та формують підсумковий висновок.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <h2>Часті запитання</h2>
-        <ul>
-          <li>
-            <h3>Як поліграф допомагає виявити шахрайство з боку бізнес-партнерів?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corporis accusamus eos expedita non nostrum ad distinctio, numquam sequi! Magni maiores nemo saepe, sed magnam consequuntur molestias quisquam odit accusamus!</p>
-          </li>
-          <li>
-            <h3>Чи доречно використовувати поліграф для оцінки надійності партнерів перед угодою?</h3>
-            <p>Так. Перевіряються ключові твердження партнера (історія діяльності, фінансові зобов'язання, взаємини з іншими сторонами), щоб виявити приховані мотиви чи факти, здатні негативно вплинути на угоду.</p>
-          </li>
-          <li>
-            <h3>Як застосувати поліграф під час підбору керівників?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus corporis nobis minus nam perspiciatis eaque unde odio velit! Placeat odit cumque quo nulla consequatur.</p>
-          </li>
-          <li>
-            <h3>Чи підходить поліграф для інвестиційних партнерств?</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad autem repudiandae, quas corrupti, alias necessitatibus cum deserunt doloribus similique quaerat adipisci maiores.</p>
+          <li class="faq-item">
+            <h3 class="faq-question">Чи підходить поліграф для інвестиційних партнерств?</h3>
+            <p class="faq-answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad autem repudiandae, quas corrupti, alias necessitatibus cum deserunt doloribus similique quaerat adipisci maiores.</p>
           </li>
         </ul>
       </div>

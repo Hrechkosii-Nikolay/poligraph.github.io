@@ -9,6 +9,7 @@
 .hero-sub-title{
   font-size: 20px;
   margin-bottom: 30px;
+  max-width: 565px;
 }
 
 .hero-txt{
@@ -16,11 +17,12 @@
   margin-bottom: 65px;
 }
 
-/* ----- Cases ----- */
-/* ----- Reasons ----- */
+
+
 /* ----- Process ----- */
-/* ----- Call to action ----- */
-/* ----- Personal ----- */
+/* ----- Call-to-action ----- */
+/* ----- Incidents ----- */
+/* ----- Cases ----- */
+/* ----- Benefits ----- */
 /* ----- Research ----- */
-/* ----- Stages ----- */
 /* ----- Faq ----- */
