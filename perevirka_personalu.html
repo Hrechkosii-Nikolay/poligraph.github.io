@@ -3,8 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  <title>Перевірка персоналу</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link
+  rel="preload"
+  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+  integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/perevirka_personalu.css">
 </head>
 <body>
   <header>
@@ -21,165 +34,161 @@
     </nav>
   </header>
   <main>
-    <section>
+    <section class="hero">
       <div class="container">
-        <h1>Перевірка персоналу</h1>
-        <p>Кадрові поліграф-тестування — це інструмент  гарантії чесності та надійності вашої команди.</p>
-        <p>Успіх компанії тримається на доброчесних працівниках, а перевірки в «Червоній лінії» дозволяють виявляти ризики як на етапі найму, так і під час поточної роботи.</p>
+        <h1 class="title hero-title">Перевірка персоналу</h1>
+        <p class="title hero-sub-title">Кадрові поліграф-тестування — це інструмент  гарантії чесності та надійності вашої команди.</p>
+        <p class="hero-txt">Успіх компанії тримається на доброчесних працівниках, а перевірки в «Червоній лінії» дозволяють виявляти ризики як на етапі найму, так і під час поточної роботи.</p>
         <a class="button" href="">Зв'язатися з нами</a>
       </div>
     </section>
-    <section>
+    <section class="staff-testing">
       <div class="container">
-        <h2>Навіщо проводити кадрове тестування?</h2>
-        <ul>
-          <li>
-            <h3>Скринінг кандидатів під час прийому.</h3>
-            <p>Виявлення прихованих фактів про правопорушення, конфлікти, фальсифікацію даних у резюме.</p>
+        <h2 class="title">Навіщо проводити кадрове тестування?</h2>
+        <ul class="staff-testing-list">
+          <li class="staff-testing-item">
+            <h3 class="staff-testing-title">Скринінг кандидатів під час прийому.</h3>
+            <p class="staff-testing-text">Виявлення прихованих фактів про правопорушення, конфлікти, фальсифікацію даних у резюме.</p>
           </li>
-          <li>
-            <h3>Періодичні перевірки персоналу.</h3>
-            <p>Зменшення ризиків внутрішніх крадіжок, фінансових зловживань та витоків інформації.</p>
+          <li class="staff-testing-item">
+            <h3 class="staff-testing-title">Періодичні перевірки персоналу.</h3>
+            <p class="staff-testing-text">Зменшення ризиків внутрішніх крадіжок, фінансових зловживань та витоків інформації.</p>
           </li>
-          <li>
-            <h3>Розслідування інцидентів</h3>
-            <p>Встановлення причетності до порушень, службових зловживань чи елементів корпоративного шпигунства.</p>
+          <li class="staff-testing-item">
+            <h3 class="staff-testing-title">Розслідування інцидентів</h3>
+            <p class="staff-testing-text">Встановлення причетності до порушень, службових зловживань чи елементів корпоративного шпигунства.</p>
           </li>
         </ul>
         <a class="button" href="">Зв'язатися з нами</a>
       </div>
     </section>
-    <section>
+    <section class="checks">
       <div class="container">
-        <h2>Що саме перевіряємо на поліграфі?</h2>
-        <ul>
-          <li>
-            <p>чесність і лояльність до роботодавця</p>
+        <h2 class="title">Що саме перевіряємо на поліграфі?</h2>
+        <ul class="checks-list">
+          <li class="checks-item">
+            <p class="checks-text">чесність і лояльність до роботодавця</p>
           </li>
-          <li>
-            <p>дотримання режиму комерційної таємниці</p>
+          <li class="checks-item">
+            <p class="checks-text">дотримання режиму комерційної таємниці</p>
           </li>
-          <li>
-            <p>можливі корупційні зв'язки та конфлікт інтересів</p>
+          <li class="checks-item">
+            <p class="checks-text">можливі корупційні зв'язки та конфлікт інтересів</p>
           </li>
-          <li>
-            <p>факти крадіжок, шахрайства та фінансових махінацій</p>
+          <li class="checks-item">
+            <p class="checks-text">факти крадіжок, шахрайства та фінансових махінацій</p>
           </li>
-          <li>
-            <p>зловживання психоактивними речовинами або алкогольну залежність</p>
+          <li class="checks-item">
+            <p class="checks-text">зловживання психоактивними речовинами або алкогольну залежність</p>
           </li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="call-to-action">
       <div class="container">
-        <h2>Все ще вагаєтеся?</h2>
-        <p>Зв'яжіться з нами та отримайте безкоштовну консультацію!</p>
+        <h2 class="title">Все ще вагаєтеся?</h2>
+        <p class="call-to-action-text">Зв'яжіться з нами та отримайте безкоштовну консультацію!</p>
         <a class="button" href="">Зв'язатися з нами</a>
       </div>
     </section>
-    <section>
+    <section class="benefits">
       <div class="container">
-        <h2>Переваги поліграф-перевірок персоналу</h2>
-        <ul>
-          <li>
-            <p>Захист бізнесу від неблагонадійних працівників.</p>
+        <h2 class="title">Переваги поліграф-перевірок персоналу</h2>
+        <ul class="benefits-list">
+          <li class="benefits-item">
+            <p class="benefits-text">Захист бізнесу від неблагонадійних працівників.</p>
           </li>
-          <li>
-            <p>Зниження ризиків збитків від внутрішніх порушень.</p>
+          <li class="benefits-item">
+            <p class="benefits-text">Зниження ризиків збитків від внутрішніх порушень.</p>
           </li>
-          <li>
-            <p>Формування відкритої та доброчесної корпоративної культури.</p>
+          <li class="benefits-item">
+            <p class="benefits-text">Формування відкритої та доброчесної корпоративної культури.</p>
           </li>
-          <li>
-            <p>Прозора й безпечна кадрова політика.</p>
+          <li class="benefits-item">
+            <p class="benefits-text">Прозора й безпечна кадрова політика.</p>
           </li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="cases">
       <div class="container">
-        <h2>Коли доречна перевірка?</h2>
+        <h2 class="title">Коли доречна перевірка?</h2>
         <p>Є низка типових ситуацій, коли тестування особливо корисне:</p>
-        <ul>
-          <li>
-            <h3>Прийом на роботу нових співробітників</h3>
-            <p>Перевірка майбутнього персоналу є критичною для посад із підвищеною відповідальністю: правоохоронні органи, банківський сектор, служби безпеки, державні структури.</p>
+        <ul class="cases-list">
+          <li class="cases-item">
+            <h3 class="cases-item-title">Прийом на роботу нових співробітників</h3>
+            <p class="cases-item-text">Перевірка майбутнього персоналу є критичною для посад із підвищеною відповідальністю: правоохоронні органи, банківський сектор, служби безпеки, державні структури.</p>
           </li>
-          <li>
-            <h3>Проведення внутрішніх розслідувань</h3>
-            <p>Витоки даних, фінансові зловживання, крадіжки та інші інциденти потребують об'єктивної перевірки</p>
+          <li class="cases-item">
+            <h3 class="cases-item-title">Проведення внутрішніх розслідувань</h3>
+            <p class="cases-item-text">Витоки даних, фінансові зловживання, крадіжки та інші інциденти потребують об'єктивної перевірки</p>
           </li>
-          <li>
-            <h3>Періодична кадрова перевірка</h3>
-            <p>Для організацій із високими вимогами до безпеки планові поліграф-тестування — стандарт практики.</p>
+          <li class="cases-item">
+            <h3 class="cases-item-title">Періодична кадрова перевірка</h3>
+            <p class="cases-item-text">Для організацій із високими вимогами до безпеки планові поліграф-тестування — стандарт практики.</p>
           </li>
-          <li>
-            <h3>Oкремі перевірки співробітників і керівництва.</h3>
-            <p>Тестування допомагає глибше оцінити якості ключових фахівців, ухвалити рішення щодо підвищення або перерозподілу повноважень.</p>
+          <li class="cases-item">
+            <h3 class="cases-item-title">Oкремі перевірки співробітників і керівництва.</h3>
+            <p class="cases-item-text">Тестування допомагає глибше оцінити якості ключових фахівців, ухвалити рішення щодо підвищення або перерозподілу повноважень.</p>
           </li>
-          <li>
-            <h3>Найчастіше поліграф особливо актуальний у критичних галузях</h3>
-            <p>Оборонний і спеціальний сектори, фармацевтика, атомна енергетика, а також для державних і стратегічно важливих установ.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <h2>Як проходить перевірка співробітників?</h2>
-        <ul>
-          <li>
-            <p>Корпоративне тестування з командою «Червоної лінії» здійснюється на сучасному обладнанні, що забезпечує високу інформативність результатів.</p>
-          </li>
-          <li>
-            <p>Детектор фіксує фізіологічні реакції, на підставі яких оцінюється правдивість або хибність відповідей. Процес ведуть кваліфіковані поліграфологи, які контролюють кожен етап.</p>
+          <li class="cases-item">
+            <h3 class="cases-item-title">Найчастіше поліграф особливо актуальний у критичних галузях</h3>
+            <p class="cases-item-text">Оборонний і спеціальний сектори, фармацевтика, атомна енергетика, а також для державних і стратегічно важливих установ.</p>
           </li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="research">
       <div class="container">
-        <h2>Стандартний порядок роботи</h2>
-        <ul>
-          <li>
-            <h3>Попередня розмова з випробуваним</h3>
-            <p>Пояснюємо мету, вимоги та правила тестування, відповідаємо на запитання.</p>
+        <h2 class="title">Як проходить перевірка співробітників?</h2>
+        <div class="research-content">
+            <p class="research-text">Корпоративне тестування з командою «Червоної лінії» здійснюється на сучасному обладнанні, що забезпечує високу інформативність результатів.</p>
+            <p class="research-text">Детектор фіксує фізіологічні реакції, на підставі яких оцінюється правдивість або хибність відповідей. Процес ведуть кваліфіковані поліграфологи, які контролюють кожен етап.</p>
+        </div>
+      </div>
+    </section>
+    <section class="stages">
+      <div class="container">
+        <h2 class="title">Стандартний порядок роботи</h2>
+        <ul class="stages-list">
+          <li class="stages-item">
+            <h3 class="stages-item-title">Попередня розмова з випробуваним</h3>
+            <p class="stages-item-text">Пояснюємо мету, вимоги та правила тестування, відповідаємо на запитання.</p>
           </li>
-          <li>
-            <h3>Калібрування</h3>
-            <p>Налаштовуємо обладнання під індивідуальні базові реакції для максимальної точності</p>
+          <li class="stages-item">
+            <h3 class="stages-item-title">Калібрування</h3>
+            <p class="stages-item-text">Налаштовуємо обладнання під індивідуальні базові реакції для максимальної точності</p>
           </li>
-          <li>
-            <h3>Основне дослідження</h3>
-            <p>Проводимо опитування за заздалегідь підготовленим і логічно структурованим переліком запитань</p>
+          <li class="stages-item">
+            <h3 class="stages-item-title">Основне дослідження</h3>
+            <p class="stages-item-text">Проводимо опитування за заздалегідь підготовленим і логічно структурованим переліком запитань</p>
           </li>
-          <li>
-            <h3>Аналітика</h3>
-            <p>Поліграфолог інтерпретує дані, зважаючи на ознаки стресу та можливі спроби дезінформації, і формує висновок</p>
+          <li class="stages-item">
+            <h3 class="stages-item-title">Аналітика</h3>
+            <p class="stages-item-text">Поліграфолог інтерпретує дані, зважаючи на ознаки стресу та можливі спроби дезінформації, і формує висновок</p>
           </li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="faq">
       <div class="container">
-        <h2>Часті запитання</h2>
-        <ul>
-          <li>
-            <h3>Які посади доцільно перевіряти на поліграфі?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus corrupti placeat, dignissimos, ea quo quasi beatae asperiores maxime sequi cupiditate, fuga aliquam!</p>
+        <h2 class="title">Часті запитання</h2>
+        <ul class="faq-list">
+          <li class="faq-item">
+            <h3 class="faq-question">Які посади доцільно перевіряти на поліграфі?</h3>
+            <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus corrupti placeat, dignissimos, ea quo quasi beatae asperiores maxime sequi cupiditate, fuga aliquam!</p>
           </li>
-          <li>
-            <h3>Як відбувається перевірка співробітника?</h3>
-            <p>Так. Перевіряються ключові твердження партнера (історія діяльності, фінансові зобов'язання, взаємини з іншими сторонами), щоб виявити приховані мотиви чи факти, здатні негативно вплинути на угоду.</p>
+          <li class="faq-item">
+            <h3 class="faq-question">Як відбувається перевірка співробітника?</h3>
+            <p class="faq-answer">Так. Перевіряються ключові твердження партнера (історія діяльності, фінансові зобов'язання, взаємини з іншими сторонами), щоб виявити приховані мотиви чи факти, здатні негативно вплинути на угоду.</p>
           </li>
-          <li>
-            <h3>Чи можна проводити перевірки на регулярній основі?</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis maiores harum necessitatibus corrupti ex nulla itaque porro laudantium? Laborum, debitis dolor.</p>
+          <li class="faq-item">
+            <h3 class="faq-question">Чи можна проводити перевірки на регулярній основі?</h3>
+            <p class="faq-answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis maiores harum necessitatibus corrupti ex nulla itaque porro laudantium? Laborum, debitis dolor.</p>
           </li>
-          <li>
-            <h3>Чи реально організувати перевірку відразу для всієї компанії?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ab commodi recusandae molestiae nulla, necessitatibus cumque beatae placeat enim blanditiis voluptate possimus ducimus at!</p>
+          <li class="faq-item">
+            <h3 class="faq-question">Чи реально організувати перевірку відразу для всієї компанії?</h3>
+            <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ab commodi recusandae molestiae nulla, necessitatibus cumque beatae placeat enim blanditiis voluptate possimus ducimus at!</p>
           </li>
         </ul>
       </div>
