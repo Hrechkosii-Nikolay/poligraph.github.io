@@ -3,43 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  <title>Перевірка особистого характеру</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link
+  rel="preload"
+  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+  integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/blog.css">
 </head>
 <body>
   <header>
-    <nav class="container">
-      <a href=""></a>
-      <ul>
-        <li><a href="">Послуги</a></li>
-        <li><a href="">Локаціі в Україні</a></li>
-        <li><a href="">Ціни</a></li>
-        <li><a href="">Про нас</a></li>
-        <li><a href="">Контакти</a></li>
+    <nav class="container main-nav">
+      <a href="./index.html" class="logo">
+        <img src="./img/logo.svg" alt="Логотип компанії">
+      </a>
+      <ul class="menu-list">
+        <li class="menu-item"><a class="link" href="">Послуги</a></li>
+        <li class="menu-item"><a class="link" href="">Локаціі в Україні</a></li>
+        <li class="menu-item"><a class="link" href="">Ціни</a></li>
+        <li class="menu-item"><a class="link" href="">Про нас</a></li>
+        <li class="menu-item"><a class="link" href="">Контакти</a></li>
       </ul>
-      <a href="tel:+380501234567" rel="nofollow">+38 (050) 123-45-67</a>
+      <a class="nav-phone" href="tel:+380501234567" rel="nofollow">+38 (050) 123-45-67</a>
     </nav>
   </header>
   <main>
-    <section>
+    <section class="hero">
       <div class="container">
-        <h1>Події та актуальна інформація в сучасній поліграфології</h1>
+        <h1 class="title hero-title">Події та актуальна інформація в сучасній поліграфології</h1>
         <a class="button" href="">Зв'язатися з нами</a>
       </div>
     </section>
-    <section>
+    <section class="article">
       <div class="container">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
-        <p class="date">
+        <h2 class="article-title">Lorem ipsum dolor sit amet</h2>
+        <p class="article-text">Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+        <p class="article-date">
           <time datetime="2026-03-15">15/03/2026</time>
         </p>
       </div>
     </section>
-    <section>
+    <section class="call-to-action">
       <div class="container">
-        <h2>Потрібна консультація або прорахунок вартості?</h2>
-        <p>Зв'яжіться з нами — підберемо оптимальний формат і підготуємо план перевірки саме під ваш запит.</p>
+        <h2 class="title">Потрібна консультація або прорахунок вартості?</h2>
+        <p class="call-to-action-text">Зв'яжіться з нами — підберемо оптимальний формат і підготуємо план перевірки саме під ваш запит.</p>
         <a class="button" href="">Зв'язатися з нами</a>
       </div>
     </section>
