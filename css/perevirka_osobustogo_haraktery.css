@@ -17,10 +17,103 @@
 }
 
 /* ----- Cases ----- */
+
+.cases .title{
+  margin-bottom: 70px;
+}
+
+.cases-list{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cases-item{
+  max-width: 330px;
+  padding: 50px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.cases-item-title{
+  margin-bottom: 20px;
+}
+
+
+
+
 /* ----- Reasons ----- */
+.reasons .title{
+  margin-bottom: 200px;
+}
+
+.reasons-list{
+  display: flex;
+  gap: 35px;
+
+  margin-left: 230px;
+
+}
+
+.reasons-item{
+  max-width: 210px;
+}
+
+.reasons-item-title{
+  margin-bottom: 30px;
+}
+
+
 /* ----- Process ----- */
+.process .title{
+  margin-bottom: 200px;
+}
+
+.process-list{
+  display: flex;
+}
+
+.process-item{
+  max-width: 325px;
+  padding: 30px 70px 30px 30px;
+}
+
+.process-item-title{
+  margin-bottom: 30px;
+}
+
 /* ----- Call to action ----- */
 /* ----- Personal ----- */
+.personal .container{
+  display: flex;
+}
+
+.personal .title{
+  max-width: 420px;
+}
+
+.personal-content{
+  max-width: 500px;
+  margin-left: auto;
+}
+
+
+
 /* ----- Research ----- */
+.research .title{
+  margin-bottom: 85px;
+}
+
+.research-content{
+  display: flex;
+  gap: 40px;
+  padding: 65px;
+
+  border: var(--border);
+  border-radius: var(--border-radius);
+
+  line-height: 1.5;
+
+}
 /* ----- Stages ----- */
 /* ----- Faq ----- */

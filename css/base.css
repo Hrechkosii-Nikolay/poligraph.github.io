@@ -4,6 +4,7 @@
   --number-color: #7D7D7D;
   --border-color: #444444;
 
+  --border: 1px solid #444444;
   --border-radius: 10px ;
 }
 
@@ -123,3 +124,18 @@ text-transform: uppercase;
 .nav-phone{
   margin-left: auto;
 }
+
+/* ----- Call to Action ----- */
+.call-to-action .container{
+  display: flex;
+  }
+  
+  .call-to-action .wrapper{
+    margin-left: auto;
+  }
+  
+  .call-to-action p{
+    margin-bottom: 30px;
+    font-size: 30px;
+    max-width: 505px;
+  }
