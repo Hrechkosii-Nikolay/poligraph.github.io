@@ -1,5 +1,6 @@
 :root{
   --main-color: #ffffff;
+  --accent-color: #c90000;
   --bg-color: #0C0C0E;
   --number-color: #7D7D7D;
   --border-color: #444444;
@@ -52,20 +53,37 @@ ul {
   margin: 0;
 }
 
-.button{
-  display: inline-block;
-  min-width: 239px;
-  padding: 25px 47px;
-  border: none;
-  border-radius: 82px;
-  font-size: 14px;
 
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 2px 2px 2px 25px;
+
+  font-size: 14px;
+  font-weight: 300;
   color: var(--bg-color);
   background-color: #fff;
-  
+
+  border: none;
+  border-radius: 50px;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
+
+}
+
+.button::after {
+  content: "→";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
 }
 
 
@@ -138,4 +156,56 @@ text-transform: uppercase;
     margin-bottom: 30px;
     font-size: 30px;
     max-width: 505px;
+  }
+
+
+  /*
+    |============================
+    |            Footer
+    |============================
+  */
+
+  .footer{
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+
+  .footer-top{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 70px; */
+  }
+
+  .footer-about{
+    max-width: 300px;
+  }
+
+  .footer-logo{
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .footer-about-text{
+    line-height: 1.5;
+  }
+
+  .footer-title{
+    margin-bottom: 30px;
+  }
+
+  .footer-item:not(:last-child){
+    margin-bottom: 10px;
+  }
+
+  .footer-contacts-phone{
+display: block;
+    font-size: 25px;
+    font-weight: 400;
+
+    margin-bottom: 15px;
+  }
+
+  .footer-contacts-hours{
+    /* display: block; */
+    margin-bottom: 35px;
   }
