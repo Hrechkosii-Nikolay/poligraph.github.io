@@ -19,10 +19,98 @@
 
 
 /* ----- Cases ----- */
+
+.cases .title{
+  margin-top: 150px;
+  margin-bottom: 120px;
+  max-width: 750px;
+}
+
+.cases-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+
+  max-width: 65%;
+  margin-left: auto;
+}
+
+.cases-item{
+  max-width: 280px;
+}
+
+.cases-item-title{
+  margin-bottom: 30px;
+}
 /* ----- Checks ----- */
+
+.checks .title{
+  margin-bottom: 120px;
+  max-width: 650px;
+}
+
+.checks-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+
+}
+
+.checks-item {
+  max-width: 210px;
+}
+
+.checks-item:nth-child(4) {
+  margin-left: 35%;
+}
+
+.checks-number{
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
 /* ----- Benefits ----- */
-/* ----- Call-to-action ----- */
+.benefits .title{
+  max-width: 755px;
+  margin-bottom: 60px;
+}
+
+.benefits-list{
+  display: flex;
+  gap: 13px;
+}
+
+.benefits-item{
+  max-width: 260px;
+  padding: 80px 30px 80px 30px;
+  text-align: center;
+
+border: var(--border);
+border-radius: var(--border-radius);
+}
+
+
+/* ----- Call-to-action in Base ----- */
 /* ----- about-process ----- */
+.about-process .title{
+  margin-bottom: 85px;
+  max-width: 685px
+}
+
+.about-process-content{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 70px 90px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+
+.about-process-text{
+  max-width: 400px;
+  line-height: 1.5;
+}
 /* ----- Stages ----- */
 /* ----- Faq ----- */
 

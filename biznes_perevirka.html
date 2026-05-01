@@ -22,7 +22,7 @@
 <body>
   <header>
     <nav class="container main-nav">
-      <a href="./index.html" class="logo">
+      <a class="logo" href="./index.html">
         <img src="./img/logo.svg" alt="Логотип компанії">
       </a>
       <ul class="menu-list">
@@ -47,7 +47,7 @@
     <section class="cases">
       <div class="container">
         <h2 class="title">Коли доречно проводити бізнес-перевірку?</h2>
-        <ul>
+        <ul class="cases-list">
           <li class="cases-item">
             <h3 class="cases-item-title">Перед підписанням важливих контрактів</h3>
             <p class="cases-item-text">Оцінка сумлінності потенційних партнерів або інвесторів, перевірка чесності заяв і намірів.</p>
@@ -72,18 +72,23 @@
         <h2 class="title">Що саме перевіряємо на поліграфі?</h2>
         <ul class="checks-list">
           <li class="checks-item">
+            <p class="checks-number">01</p>
             <p class="checks-text">наявність фактів зловживання посадовими повноваженнями</p>
           </li>
           <li class="checks-item">
+            <p class="checks-number">02</p>
             <p class="checks-text">розкриття комерційної таємниці</p>
           </li>
           <li class="checks-item">
+            <p class="checks-number">03</p>
             <p class="checks-text">крадіжки майна й фінансові махінації</p>
           </li>
           <li class="checks-item">
+            <p class="checks-number">04</p>
             <p class="checks-text">конфлікти інтересів і приховані зв'язки з конкурентами</p>
           </li>
           <li class="checks-item">
+            <p class="checks-number">05</p>
             <p class="checks-text">реальний рівень лояльності до компанії</p>
           </li>
         </ul>
@@ -110,17 +115,19 @@
     </section>
     <section class="call-to-action">
       <div class="container">
-        <h2 class="title">Все ще сумніваєтеся?</h2>
-        <p class="call-to-action-text">Звертайтеся до команди «Червоної лінії» — проконсультуємо безкоштовно.</p>
-        <a class="button" href="">Зв'язатися з нами</a>
+        <h2 class="title">Все ще<br> сумніваєтеся?</h2>
+        <div class="wrapper">
+          <p class="call-to-action-text">Звертайтеся до команди «Червоної лінії» — проконсультуємо безкоштовно.</p>
+          <a class="button" href="">Зв’язатися з нами</a>
+        </div>
       </div>
     </section>
     <section class="about-process">
       <div class="container">
         <h2 class="title">Як ми організовуємо бізнес-перевірки</h2>
         <div class="about-process-content">
-          <p lass="about-process-text">Методика спирається на науковий підхід і забезпечує високу інформативність результатів (орієнтовно 95% за сукупністю індикаторів).</p>
-          <p lass="about-process-text">Ми діємо за принципами добровільності, законності, компетентності та конфіденційності.</p>
+          <p class="about-process-text">Методика спирається на науковий підхід і забезпечує високу інформативність результатів (орієнтовно 95% за сукупністю індикаторів).</p>
+          <p class="about-process-text">Ми діємо за принципами добровільності, законності, компетентності та конфіденційності.</p>
         </div>
       </div>
     </section>
@@ -171,18 +178,49 @@
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <a href="" class="logo"></a>
-      <ul class="menu-footer">
-        <li class="menu-item"><a href="">Послуги</a></li>
-        <li class="menu-item"><a href="">Локаціі в Україні</a></li>
-        <li class="menu-item"><a href="">Ціни</a></li>
-        <li class="menu-item"><a href="">Про нас</a></li>
-        <li class="menu-item"><a href="">Контакти</a></li>
-      </ul>
-      <a href="tel:+380501234567" rel="nofollow">+38 (050) 123-45-67</a>
-      <a class="button" href="">Зв’язатися з нами</a>    
+      <div class="footer-top">
+  
+        <div class="footer-about">
+          <a class="footer-logo" href="./index.html">
+            <img class="logo-img" src="./img/logo.svg" alt="Логотип компанії">
+          </a>
+          <p class="footer-about-text">Професійна перевірка на поліграфі по всій Україні. Конфіденційно та точно.</p>
+        </div>
+  
+        <div class="footer-nav">
+          <h3 class="footer-title">Навігація</h3>
+          <ul class="footer-list">
+            <li class="footer-item"><a href="">Послуги</a></li>
+            <li class="footer-item"><a href="">Локаціі в Україні</a></li>
+            <li class="footer-item"><a href="">Ціни</a></li>
+            <li class="footer-item"><a href="">Про нас</a></li>
+            <li class="footer-item"><a href="">Контакти</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-blog">
+          <h3 class="footer-title">Блог</h3>
+          <ul class="footer-list">
+            <li class="footer-item"><a href="">Стаття 1</a></li>
+            <li class="footer-item"><a href="">Стаття 2</a></li>
+            <li class="footer-item"><a href="">Стаття 3</a></li>
+            <li class="footer-item"><a href="">Стаття 4</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-contacts">
+          <a class="footer-contacts-phone" href="tel:+380501234567" rel="nofollow">+38 (050) 123-45-67</a>
+          <p class="footer-contacts-hours">Щодня з 09:00 до 18:00</p>
+          <a class="button" href="">Зв'язатися з нами</a>
+        </div>
+  
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom-copy">&copy; 2026 Червона лінія. Всі права захищені.</p>
+        <a class="footer-bottom-policy" href="">Політика конфіденційності</a>
+      </div>
     </div>
   </footer>
 </body>
