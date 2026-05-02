@@ -20,9 +20,98 @@
 
 
 /* ----- Process ----- */
-/* ----- Call-to-action ----- */
+.process .title{
+  margin-bottom: 200px;
+}
+
+.process-list{
+  display: flex;
+}
+
+.process-item{
+  max-width: 325px;
+  padding: 30px 70px 30px 30px;
+}
+
+.process-item-title{
+  margin-bottom: 30px;
+}
+/* ----- Call-to-action in base ----- */
+
 /* ----- Incidents ----- */
+.incidents-content{
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.incidents-text{
+  line-height: 1.4;
+}
+
 /* ----- Cases ----- */
+.cases .title{
+  margin-bottom: 90px;
+}
+
+.cases-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cases-item{
+  max-width: 330px;
+  padding: 50px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.cases-item-title{
+  margin-bottom: 20px;
+}
 /* ----- Benefits ----- */
+
+.benefits .title{
+  margin-top: 150px;
+  margin-bottom: 120px;
+  max-width: 750px;
+}
+
+.benefits-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+
+  max-width: 65%;
+  margin-left: auto;
+}
+
+.benefits-item{
+  max-width: 280px;
+}
+
+.benefits-item-title{
+  margin-bottom: 30px;
+}
 /* ----- Research ----- */
+
+.research .title{
+  margin-bottom: 85px;
+  max-width: 685px
+}
+
+.research-content{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 70px 90px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+
+.research-text{
+  max-width: 400px;
+  line-height: 1.5;
+}
 /* ----- Faq ----- */

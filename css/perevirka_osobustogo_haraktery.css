@@ -153,13 +153,5 @@
   font-size: 30px;
   font-weight: 100;
 }
-/* ----- Faq ----- */
+/* ----- Faq in Base----- */
 
-.faq .title{
-  margin-bottom: 15px;
-}
-
-.faq-item{
-  padding: 40px 0;
-  border-bottom: var(--border);
-}

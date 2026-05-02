@@ -1,21 +1,6 @@
-/* ----- Hero ----- */
+/* ----- Hero in Base ----- */
 
-.hero-title{
-  font-size: 70px;
-  
-  margin-bottom: 35px;
-}
 
-.hero-sub-title{
-  font-size: 20px;
-  margin-bottom: 30px;
-  max-width: 565px;
-}
-
-.hero-txt{
-  max-width: 600px;
-  margin-bottom: 65px;
-}
 
 
 /* ----- Cases ----- */
@@ -91,13 +76,13 @@ border-radius: var(--border-radius);
 
 
 /* ----- Call-to-action in Base ----- */
-/* ----- about-process ----- */
-.about-process .title{
+/* ----- research ----- */
+.research .title{
   margin-bottom: 85px;
   max-width: 685px
 }
 
-.about-process-content{
+.research-content{
   display: flex;
   justify-content: space-between;
 
@@ -107,10 +92,45 @@ border-radius: var(--border-radius);
 }
 
 
-.about-process-text{
+.research-text{
   max-width: 400px;
   line-height: 1.5;
 }
 /* ----- Stages ----- */
-/* ----- Faq ----- */
+.stages .title{
+  margin-bottom: 50px;
+}
 
+.stages-item{
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  padding: 40px 0;
+  margin-bottom: 30px;
+  border-bottom: var(--border);
+}
+
+.stages-item-title{
+  width: 350px;
+  flex-shrink: 0;
+
+  font-size: 30px;
+  font-weight: 200;
+  text-transform: uppercase;
+
+}
+
+.stages-item-text{
+  max-width: 460px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+
+  line-height: 1.5;
+}
+
+.stages-item-number{
+  font-size: 30px;
+  font-weight: 100;
+}
+/* ----- Faq in base----- */

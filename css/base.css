@@ -24,8 +24,8 @@ body {
 
 .container{
   width: 1140px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -58,8 +58,8 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  padding: 2px 2px 2px 25px;
+  gap: 25px;
+  padding: 2px 2px 2px 35px;
 
   font-size: 14px;
   font-weight: 300;
@@ -104,11 +104,18 @@ ul {
 .section-text{
 font-size: 16px;
 line-height: 1.2;
-
-
 }
 
-/* ----- Header ----- */
+.accent{
+  color: var(--accent-color);
+}
+
+
+/*
+  |============================
+  |         Header
+  |============================
+*/
 
 .logo{
   margin-right: 45px;
@@ -135,7 +142,7 @@ text-transform: uppercase;
 
 .menu-item .link{
   display: block;
-  padding: 25px 25px; 
+  padding: 20px 20px; 
 
 }
 
@@ -148,21 +155,93 @@ text-transform: uppercase;
   margin-left: auto;
 }
 
-/* ----- Call to Action ----- */
-.call-to-action .container{
+/*
+  |============================
+  |           HERO        
+  |============================
+*/
+
+
+.hero-title{
+  font-size: 70px;
+  font-weight: 400;
+  
+  margin-bottom: 35px;
+}
+
+.hero-sub-title{
+  font-size: 20px;
+  margin-bottom: 30px;
+  max-width: 565px;
+}
+
+.hero-txt{
+  max-width: 645px;
+  margin-bottom: 35px;
+  line-height: 1.5;
+}
+
+.hero-features-list{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.hero-features-text{
+  max-width: 135px;
+  /* max-width: коли додам icon прибрати з тексту і дата всьому <li> */
+}
+
+/*
+  |============================
+  |           CTA     
+  |============================
+*/
+.cta .container{
   display: flex;
   }
   
-  .call-to-action .wrapper{
+  .cta-content{
     margin-left: auto;
+    padding: 25px 0px 25px 70px;
+
+    border-left: var(--border);
+  }
+
+  .title-label{
+    margin-bottom: 25px;
+
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
   }
   
-  .call-to-action-text{
+  .cta-text{
     margin-bottom: 30px;
     font-size: 30px;
     max-width: 505px;
   }
 
+  /*
+    |============================
+    |            faq
+    |============================
+  */
+
+    .faq .title{
+      margin-bottom: 15px;
+    }
+
+    .faq-item{
+      padding: 40px 0;
+      border-bottom: var(--border);
+    }
+    .faq-question{
+      margin-bottom: 30px;
+
+      text-transform: uppercase;
+      font-weight: 200;
+    }
 
   /*
     |============================
