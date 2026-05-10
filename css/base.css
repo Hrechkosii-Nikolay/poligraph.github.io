@@ -6,7 +6,9 @@
   --border-color: #444444;
 
   --border: 1px solid #444444;
-  --border-radius: 10px ;
+  --border-accent: 1px solid #c90000;
+  --border-accent-sec: 1px solid rgba(224, 43, 43, 0.4);
+  --border-radius: 10px;
 }
 
 
@@ -53,38 +55,203 @@ ul {
   margin: 0;
 }
 
-
-.button {
+/*
+  |============================
+  |            Main-btn
+  |============================
+*/
+.main-btn {
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 25px;
-  padding: 2px 2px 2px 35px;
+  gap: 10px;
 
-  font-size: 14px;
-  font-weight: 300;
-  color: var(--bg-color);
-  background-color: #fff;
-
-  border: none;
-  border-radius: 50px;
   text-decoration: none;
   text-transform: uppercase;
-
 }
 
-.button::after {
-  content: "→";
+.main-btn-text {
+
+  padding: 15px 30px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: var(--accent-color);
+  border: var(--border-accent);
+  border-radius: 100px;
+
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 0.02em;
+
+  transition: 0.3s ease;
+}
+
+.main-btn-circle {
   width: 50px;
   height: 50px;
-  background-color: var(--accent-color);
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--accent-color);
   border-radius: 50%;
-  color: #fff;
-  font-size: 20px;
+
+  transition: 0.3s ease;
 }
+
+.main-btn:hover .main-btn-text {
+  background: transparent;
+  border: var(--border-accent);
+}
+
+.main-btn:hover .main-btn-circle {
+  background: var(--accent-color);
+  transform: translateX(4px);
+}
+
+
+
+
+/*
+  |============================
+  |        Section Label
+  |============================
+*/
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  position: relative;
+
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+.section-label::after {
+  content: '';
+  width: 48px;
+  height: 2px;
+  background: var(--accent-color);
+}
+.section-label::before {
+  content: '';
+  position: absolute;
+  left: 12%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-color);
+}
+
+
+/*
+  |============================
+  |        Research         
+  |============================
+*/
+
+
+.research .title {
+  margin-bottom: 52px;
+}
+
+/* --- Card --- */
+.research-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: var(--border-accent-sec);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 
+  0 8px 30px rgba(224, 43, 43, 0.35),
+  0 2px 8px rgba(224, 43, 43, 0.2),
+  4px 0 20px rgba(224, 43, 43, 0.15),
+  -4px 0 20px rgba(224, 43, 43, 0.15);
+}
+
+/* Червона крапка по центру між колонками */
+.research-card::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  z-index: 2;
+}
+
+/* --- Columns --- */
+.research-col {
+  padding: 48px 44px;
+}
+
+.research-col:first-child {
+  position: relative;
+}
+.research-col:first-child::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 90%;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.12) 20%,
+    rgba(255, 255, 255, 0.12) 80%,
+    transparent
+  );
+}
+
+/* --- Col title --- */
+.research-col-title {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+.research-col-title::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: #e02b2b;
+  margin-top: 10px;
+  margin-bottom: 28px;
+}
+
+/* --- Col text --- */
+.research-col-text {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #cccccc;
+  margin: 0;
+}
+
+/**
+  |============================
+  |        Research        end
+  |============================
+*/
 
 
 .title{

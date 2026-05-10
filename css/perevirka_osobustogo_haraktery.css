@@ -99,22 +99,12 @@
 
 
 
-/* ----- Research ----- */
-.research .title{
-  margin-bottom: 85px;
-}
+/* ----- Research in base----- */
 
-.research-content{
-  display: flex;
-  gap: 40px;
-  padding: 65px;
 
-  border: var(--border);
-  border-radius: var(--border-radius);
 
-  line-height: 1.5;
 
-}
+
 /* ----- Stages ----- */
 
 .stages .title{
