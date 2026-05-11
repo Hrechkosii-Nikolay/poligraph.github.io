@@ -94,23 +94,6 @@
 }
 
 
-
-
-/* ----- Call to Action ----- */
-.call-to-action .container{
-display: flex;
-}
-
-.call-to-action .wrapper{
-  margin-left: auto;
-}
-
-.call-to-action p{
-  margin-bottom: 30px;
-  font-size: 30px;
-  max-width: 505px;
-}
-
 /* ----- About service ----- */
 .about-service .title{
 margin-bottom: 72px;
