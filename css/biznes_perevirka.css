@@ -5,7 +5,7 @@
 
 /* ----- Cases ----- */
 
-.cases .title{
+/* .cases .title{
   margin-top: 150px;
   margin-bottom: 120px;
   max-width: 750px;
@@ -26,7 +26,7 @@
 
 .cases-item-title{
   margin-bottom: 30px;
-}
+} */
 /* ----- Checks ----- */
 
 .checks .title{
@@ -97,8 +97,8 @@ border-radius: var(--border-radius);
   line-height: 1.5;
 }
 /* ----- Stages ----- */
-.stages .title{
-  margin-bottom: 50px;
+/* .stages .title{ */
+  /* margin-bottom: 50px;
 }
 
 .stages-item{
@@ -132,5 +132,5 @@ border-radius: var(--border-radius);
 .stages-item-number{
   font-size: 30px;
   font-weight: 100;
-}
+} */
 /* ----- Faq in base----- */

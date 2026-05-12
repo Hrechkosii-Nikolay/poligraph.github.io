@@ -17,7 +17,7 @@
 }
 
 /* ----- Cases ----- */
-
+/* 
 .cases .title{
   margin-bottom: 70px;
 }
@@ -45,10 +45,7 @@
 }
 
 .cases-item-icon {
-  /* width: 48px;
-  height: 48px;
 
-  margin-bottom: 40px; */
 }
 
 .cases-item-title {
@@ -71,7 +68,7 @@
 
 .cases-item-text {
   max-width: 320px;
-}
+} */
 
 
 
@@ -140,43 +137,12 @@
 
 
 
-/* ----- Stages ----- */
+/* ----- Stages  in base----- */
 
-.stages .title{
-  margin-bottom: 50px;
-}
 
-.stages-item{
-  display: flex;
-  align-items: center;
-  gap: 55px;
-  padding: 40px 0;
-  margin-bottom: 30px;
-  border-bottom: var(--border);
-}
 
-.stages-item-title{
-  width: 350px;
-  flex-shrink: 0;
 
-  font-size: 30px;
-  font-weight: 200;
-  text-transform: uppercase;
 
-}
 
-.stages-item-text{
-  max-width: 460px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-
-  line-height: 1.5;
-}
-
-.stages-item-number{
-  font-size: 30px;
-  font-weight: 100;
-}
 /* ----- Faq in Base----- */
 
