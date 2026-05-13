@@ -55,7 +55,7 @@
 }
 
 /* ----- Benefits ----- */
-.benefits .title{
+/* .benefits .title{
   max-width: 755px;
   margin-bottom: 60px;
 }
@@ -72,7 +72,7 @@
 
 border: var(--border);
 border-radius: var(--border-radius);
-}
+} */
 
 
 /* ----- Call-to-action in Base ----- */
