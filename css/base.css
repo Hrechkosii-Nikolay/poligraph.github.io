@@ -1,5 +1,6 @@
 :root{
   --main-color: #ffffff;
+  --secondary-color: #999999;
   --accent-color: #c90000;
   --bg-color: #0C0C0E;
   --number-color: #7D7D7D;
@@ -561,6 +562,53 @@ text-transform: uppercase;
     margin-bottom: 30px;
     font-size: 30px;
     max-width: 505px;
+  }
+
+  .cta-features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .cta-features-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 24px 32px;
+    position: relative;
+  }
+  
+  .cta-features-item:first-child::before {
+    display: none;
+  }
+  
+  .cta-features-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 90%;
+    width: 1px;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(255, 255, 255, 0.12) 20%,
+      rgba(255, 255, 255, 0.12) 80%,
+      transparent
+    );
+  }
+  
+  /* .cta-icon {
+    color: #e02b2b;
+    flex-shrink: 0;
+  } */
+  
+  .cta-features-text {
+    font-size: 14px;
+    line-height: 1.5;
   }
 
 /*
