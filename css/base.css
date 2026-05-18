@@ -142,17 +142,6 @@ ul {
   height: 2px;
   background: var(--accent-color);
 }
-/* .section-label::before {
-  content: '';
-  position: absolute;
-  left: 120px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--accent-color);
-} */
 
 
 /*
@@ -481,7 +470,7 @@ text-transform: uppercase;
 
 .menu-item .link:hover,
 .menu-item .link:focus{
-  background-color: #1D1D1D;
+  background-color: var(--accent-color);
 }
 
 .nav-phone{
