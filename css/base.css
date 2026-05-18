@@ -606,6 +606,12 @@ text-transform: uppercase;
   |============================
 */
 
+.benefit{
+  background-image: url(../img/benefit-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .benefits .title{
   max-width: 755px;
   margin-bottom: 60px;
