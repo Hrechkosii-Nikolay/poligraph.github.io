@@ -178,7 +178,7 @@
 
 
 /* ----- Tools ----- */
-.tools .title{
+/* .tools .title{
   margin-bottom: 95px;
 }
 
@@ -200,7 +200,161 @@
 .tools-list .items:last-child{
   
   min-width: 100%;
+} */
+.tools {
+  position: relative;
+  padding: 140px 0;
+  overflow: hidden;
+  /* background: #020202; */
 }
+
+.tools .title {
+  max-width: 600px;
+  margin-bottom: 52px;
+  /* font-size: 108px; */
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+
+}
+
+.tools-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.tools-list .items {
+  position: relative;
+
+  min-height: 540px;
+  padding: 42px;
+
+  border-radius: 34px;
+  border: 1px solid rgba(255, 0, 0, 0.45);
+
+  overflow: hidden;
+}
+
+.tools-list .items:nth-child(3) {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  min-height: 420px;
+}
+
+.items-number {
+  margin-bottom: 24px;
+
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+
+  color: var(--accent-color);
+}
+
+
+.items-number::after {
+  content: "";
+  display: block;
+
+  width: 24px;
+  height: 1px;
+
+  margin-top: 10px;
+
+  background: var(--accent-color);
+}
+
+.tools-list .sub-title {
+  margin-bottom: 20px;
+}
+
+
+.tools-img {
+  position: absolute;
+  right: auto;
+  bottom: 24px; 
+  margin: 15px auto;
+
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+
+  z-index: 2;
+
+  filter:
+    drop-shadow(0 0 24px rgba(255, 0, 0, 0.35))
+    drop-shadow(0 28px 55px rgba(255, 0, 0, 0.55));
+}
+
+.tools-list .items:nth-child(1) img {
+  /* width: 320px; */
+  /* right: 34px; */
+  bottom: 45px;
+  /* top: 50%; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tools-list .items:nth-child(2) img {
+  /* width: 420px; */
+  /* right: 50%; */
+  bottom: 40px;
+  /* top: 50%; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tools-list .items:nth-child(3) .tools-img {
+  position: relative;
+
+  width: 350px;
+
+  right: auto;
+  bottom: auto;
+
+  margin-left: auto;
+}
+
+.tools-list .items::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  bottom: -140px;
+
+  width: 340px;
+  height: 340px;
+
+  border-radius: 50%;
+
+  transform: translateX(-50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 0, 0, 0.55) 0%,
+      rgba(255, 0, 0, 0.16) 38%,
+      rgba(255, 0, 0, 0.04) 60%,
+      transparent 75%
+    );
+
+  filter: blur(18px);
+
+  pointer-events: none;
+}
+
+.tools-list .items:nth-child(3)::before {
+  width: 520px;
+  height: 520px;
+
+  left: 72%;
+  bottom: -230px;
+}
+
+
+
+
 
 
 /* ----- About service ----- */
