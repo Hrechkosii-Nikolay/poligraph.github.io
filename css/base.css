@@ -607,7 +607,7 @@ text-transform: uppercase;
 */
 
 .benefit{
-  background-image: url(../img/benefit-bg.webp);
+  background-image: url(../img/benefit-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
