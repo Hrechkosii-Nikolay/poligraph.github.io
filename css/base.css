@@ -401,14 +401,6 @@ ul {
   |============================
 */
 
-
-
-
-
-
-
-
-
 .title{
   font-size: 50px;
   text-transform: uppercase;
@@ -483,24 +475,52 @@ text-transform: uppercase;
   |============================
 */
 
+.hero .container {
+  position: relative;
+  z-index: 1;           /* контент над canvas */
+}
+
+.hero{
+  height: 100vh;
+  /* background-image: url(../img/main-hero-bg.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;   /* ← додай */
+  overflow: hidden;     /* ← додай */
+}
+
+#hero-canvas {
+  position: absolute;
+  inset: 0;                    /* top:0 right:0 bottom:0 left:0 */
+  width: 100%;
+  height: 100%;
+  z-index: 0;                  /* під контентом */
+  pointer-events: none;        /* клік проходить крізь canvas */
+}
 
 .hero-title{
-  font-size: 70px;
   font-weight: 400;
-  
-  margin-bottom: 35px;
+  font-size: 98px;
+  line-height: 1.0;
+  margin-bottom: 32px;;
+  text-transform: uppercase;
 }
 
 .hero-sub-title{
   font-size: 20px;
-  margin-bottom: 30px;
+  font-weight: 300;
+  margin-bottom: 16px;
+
   max-width: 565px;
 }
 
 .hero-txt{
   max-width: 645px;
-  margin-bottom: 35px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  color: var(--secondary-color);
 }
 
 .hero-features-list{
@@ -519,6 +539,15 @@ text-transform: uppercase;
   |           CTA     
   |============================
 */
+
+.cta{
+  background: linear-gradient(
+    to bottom,
+    #0C0C0E 0%,
+    #120000 70%,
+    #2a0000 100%
+  );
+}
 .cta .container{
   display: flex;
   }
