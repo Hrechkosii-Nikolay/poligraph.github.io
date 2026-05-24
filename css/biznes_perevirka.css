@@ -1,6 +1,8 @@
 /* ----- Hero in Base ----- */
 
-
+.hero{
+    background-image: url(../img/biznes-perevirka-bg.jpg);
+}
 
 
 /* ----- Cases ----- */

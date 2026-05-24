@@ -40,10 +40,10 @@
   /* ── ХВИЛІ ПОЛІГРАФА ── */
   function buildWaves(){
     waveLines = [
-      {y:0.30, amp:22, freq:0.045, speed:0.055, color:'rgba(255,255,255,0.55)'},
-      {y:0.42, amp:14, freq:0.060, speed:0.040, color:'rgba(200,40,40,0.70)'},
-      {y:0.54, amp:18, freq:0.038, speed:0.065, color:'rgba(255,255,255,0.45)'},
-      {y:0.66, amp:10, freq:0.055, speed:0.048, color:'rgba(200,40,40,0.55)'},
+      {y:0.30, amp:22, freq:0.045, speed:0.018, color:'rgba(255,255,255,0.55)'},
+      {y:0.42, amp:14, freq:0.060, speed:0.013, color:'rgba(200,40,40,0.70)'},
+      {y:0.54, amp:18, freq:0.038, speed:0.020, color:'rgba(255,255,255,0.45)'},
+      {y:0.66, amp:10, freq:0.055, speed:0.015, color:'rgba(200,40,40,0.55)'},
     ];
   }
 
@@ -66,8 +66,7 @@
         const progress = (x - waveStartX)/(waveEndX - waveStartX);
         const wave1 = Math.sin(x*ch.freq + t*ch.speed) * ch.amp * progress;
         const wave2 = Math.sin(x*ch.freq*2.3 + t*ch.speed*1.4 + 1.2) * ch.amp*0.35 * progress;
-        const spike = Math.random() < 0.003 ? (Math.random()-0.5)*ch.amp*3.5 : 0;
-        ctx.lineTo(x, H*ch.y + wave1 + wave2 + spike);
+        ctx.lineTo(x, H*ch.y + wave1 + wave2);
       }
       ctx.strokeStyle = ch.color;
       ctx.lineWidth = 1.0;
