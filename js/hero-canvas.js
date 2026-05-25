@@ -40,10 +40,10 @@
   /* ── ХВИЛІ ПОЛІГРАФА ── */
   function buildWaves(){
     waveLines = [
-      {y:0.30, amp:22, freq:0.045, speed:0.018, color:'rgba(255,255,255,0.55)'},
-      {y:0.42, amp:14, freq:0.060, speed:0.013, color:'rgba(200,40,40,0.70)'},
-      {y:0.54, amp:18, freq:0.038, speed:0.020, color:'rgba(255,255,255,0.45)'},
-      {y:0.66, amp:10, freq:0.055, speed:0.015, color:'rgba(200,40,40,0.55)'},
+      {y:0.30, amp:52, freq:0.105, speed:0.008, color:'rgba(255,255,255,0.55)'},
+      {y:0.42, amp:24, freq:0.120, speed:0.005, color:'rgba(200,40,40,0.70)'},
+      {y:0.54, amp:45, freq:0.098, speed:0.009, color:'rgba(255,255,255,0.45)'},
+      {y:0.66, amp:30, freq:0.115, speed:0.002, color:'rgba(200,40,40,0.55)'},
     ];
   }
 

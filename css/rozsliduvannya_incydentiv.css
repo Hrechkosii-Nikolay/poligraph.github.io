@@ -1,6 +1,6 @@
 /* ----- Hero ----- */
 
-.hero-title{
+/* .hero-title{
   font-size: 70px;
   
   margin-bottom: 35px;
@@ -15,6 +15,11 @@
 .hero-txt{
   max-width: 600px;
   margin-bottom: 65px;
+} */
+
+.hero{
+    background-image:   linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url(../img/rozsliduvannya_incydentiv-bg.jpg);
 }
 
 
