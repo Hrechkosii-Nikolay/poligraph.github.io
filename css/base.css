@@ -701,7 +701,7 @@ margin: 0 auto;
     |============================
   */
 
-    .faq .title{
+    /* .faq .title{
       margin-bottom: 15px;
     }
 
@@ -714,7 +714,252 @@ margin: 0 auto;
 
       text-transform: uppercase;
       font-weight: 200;
+    } */
+
+
+    .faq {
+      position: relative;
+      /* padding: 140px 0; */
+      /* overflow: hidden; */
+      /* background: #050505; */
     }
+    
+    /* Червоне світіння */
+    .faq::before {
+      content: "";
+      position: absolute;
+      top: -180px;
+      right: -220px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(
+        circle,
+        rgba(255, 0, 0, 0.28) 0%,
+        rgba(255, 0, 0, 0.12) 35%,
+        rgba(255, 0, 0, 0) 72%
+      );
+      pointer-events: none;
+    }
+    
+    /* Декоративні лінії */
+    .faq::after {
+      content: "";
+      position: absolute;
+      left: -180px;
+      bottom: -180px;
+      width: 600px;
+      height: 600px;
+    
+      background:
+        repeating-radial-gradient(
+          circle at center,
+          rgba(255, 0, 0, 0.18) 0px,
+          rgba(255, 0, 0, 0.18) 2px,
+          transparent 2px,
+          transparent 26px
+        );
+    
+      opacity: 0.4;
+      pointer-events: none;
+    }
+    
+    .faq .container {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .faq .title {
+      max-width: 600px;
+      margin-bottom: 52px;
+      line-height: 1.2;
+      letter-spacing: 0.05em;
+    }
+    
+    /* Список */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    /* Елемент */
+    .faq-item {
+      position: relative;
+
+      border: var(--border);
+      border-radius: var(--border-radius);
+  
+    
+      transition:
+        border-color 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+    
+      overflow: hidden;
+    }
+    
+    /* Hover */
+    .faq-item:hover {
+      border-color: var(--accent-color);
+    
+      box-shadow:
+        0 0 35px rgba(255, 0, 0, 0.12),
+        inset 0 0 30px rgba(255, 0, 0, 0.04);
+    }
+    
+    /* Питання */
+    .faq-question {
+      position: relative;
+    
+      padding: 42px 120px 42px 48px;
+    
+      line-height: 1.2;
+      font-weight: 300;
+      text-transform: uppercase;
+    
+      cursor: pointer;
+      user-select: none;
+    
+      transition: color 0.3s ease;
+    }
+
+    .faq-item.active .faq-question{
+      padding-bottom: 25px;
+    }
+    
+    /* Плюс */
+    .faq-question::before,
+    .faq-question::after {
+      content: "";
+    
+      position: absolute;
+      top: 50%;
+      right: 52px;
+    
+      width: 28px;
+      height: 2px;
+    
+      background: #ff1a1a;
+    
+      transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+    }
+    
+    .faq-question::after {
+      transform: rotate(90deg);
+    }
+    
+    /* Активний стан */
+    .faq-item.active .faq-question::after {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+
+    
+    /* Відповідь */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+    
+      padding: 0 140px 0 48px;
+    
+      line-height: 1.7;
+      letter-spacing: 1.2px;
+      /* color: rgba(255, 255, 255, 0.78); */
+    
+      opacity: 0;
+    
+      transition:
+        max-height 0.55s ease,
+        opacity 0.4s ease,
+        padding 0.4s ease;
+    }
+    
+    /* Відкрита відповідь */
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+    
+      padding:
+        0
+        140px
+        42px
+        48px;
+    
+      opacity: 1;
+    }
+    
+
+    /* ------About-us---------- */
+
+.about-us {
+  position: relative;
+  padding: 140px 0;
+}
+
+.about-us::before {
+  content: "";
+  position: absolute;
+  left: -120px;
+  bottom: -90px;
+  width:2200px;
+  height: 620px;
+  background:
+    repeating-radial-gradient(
+      ellipse at center,
+      rgba(255, 0, 0, 0.22) 0px,
+      rgba(255, 0, 0, 0.22) 1px,
+      transparent 1px,
+      transparent 14px
+    );
+
+  opacity: 0.45;
+
+  transform: rotate(-8deg);
+  pointer-events: none;
+}
+
+.about-us-wrapper {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  align-items: start;
+}
+
+
+.about-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+
+  list-style: none;
+}
+
+.about-us-list::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 120%;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.12) 20%,
+    rgba(255, 255, 255, 0.12) 80%,
+    transparent
+  );
+}
+
+.about-us-list .items p {
+  line-height: 1.45;
+}
+
 
   /*
     |============================
