@@ -4,76 +4,7 @@
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
                     url(../img/perevirka_osobustogo_haraktery-bg.jpg);
 }
-/* 
-.hero-title{
-  font-size: 70px;
-  
-  margin-bottom: 35px;
-}
 
-.hero-sub-title{
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-.hero-txt{
-  max-width: 600px;
-  margin-bottom: 65px;
-} */
-
-/* ----- Cases ----- */
-/* 
-.cases .title{
-  margin-bottom: 70px;
-}
-
-.cases-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.cases-item {
-  padding: 40px;
-
-  border: var(--border);
-  border-radius: var(--border-radius);
-
-  box-shadow:
-  inset -120px 0 120px -90px rgba(255, 0, 0, 0.10),
-  inset 0 1px 0 rgba(255, 255, 255, 0.04),
-  0 0 0 1px rgba(255, 255, 255, 0.03);
-}
-
-.cases-item-icon {
-
-}
-
-.cases-item-title {
-  margin-bottom: 16px;
-
-  font-size: 18px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.cases-item-title::after {
-  content: '';
-  display: block;
-  width: 36px;
-  height: 2px;
-  background: var(--accent-color);
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.cases-item-text {
-  max-width: 320px;
-} */
 
 
 
