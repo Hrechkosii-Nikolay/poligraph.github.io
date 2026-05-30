@@ -33,10 +33,10 @@
 /* ----- Checks ----- */
 
 .checks .title{
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
   max-width: 650px;
 }
-
+/* 
 .checks-list {
   display: flex;
   flex-wrap: wrap;
@@ -55,7 +55,7 @@
 .checks-number{
   margin-bottom: 20px;
   font-weight: 100;
-}
+} */
 
 /* ----- Benefits ----- */
 /* .benefits .title{

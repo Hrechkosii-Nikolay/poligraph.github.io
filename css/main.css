@@ -6,9 +6,8 @@
   padding-bottom: 130px;
 
   height: 100vh;
-  /* background-image: url(../img/main-hero-bg.jpg); */
   background-image:   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                      url(../img/main-hero-bg.png);
+                      url(../img/main-hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 

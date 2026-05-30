@@ -9,16 +9,16 @@
 /* ----- staff testing ----- */
 .staff-testing {
   position: relative;
-  /* padding: 120px 0;
-  background: #050505;
-  overflow: hidden;  */
+  /* padding: 120px 0; */
+  /* background: #050505; */
+  overflow: hidden; 
 }
 
 /* декоративне червоне світіння */
 .staff-testing::before {
   content: '';
   position: absolute;
-  top: -200px;
+  top: 0;
   left: -200px;
   width: 500px;
   height: 500px;
