@@ -457,8 +457,6 @@ height: 100%;
 
 /* Іконка */
 .services-icon {
- 
-
   display: block;
 
   width: 72px;
@@ -481,34 +479,7 @@ height: 100%;
     0 0 25px rgba(255,0,0,.12);
 }
 
-/* Різні іконки */
-.services-list .items:nth-child(1)::before {
-  background-image: url("./img/icon-users.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 34px;
-}
 
-.services-list .items:nth-child(2)::before {
-  background-image: url("./img/icon-folder.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 34px;
-}
-
-.services-list .items:nth-child(3)::before {
-  background-image: url("./img/icon-user-check.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 34px;
-}
-
-.services-list .items:nth-child(4)::before {
-  background-image: url("./img/icon-shield.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 34px;
-}
 
 .services-list-title {
   position: relative;
@@ -586,7 +557,7 @@ height: 100%;
 .benefit-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 25px;
 }
 
 .benefit-item {
@@ -625,6 +596,185 @@ height: 100%;
   line-height: 1.7;
 
 }
+
+
+/* ----- Price ----- */
+
+.price .title {
+
+  margin-bottom: 20px;
+}
+
+.price-txt {
+  max-width: 500px;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 70px;
+}
+
+.price-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+
+}
+
+.price-item {
+  position: relative;
+  padding: 35px 35px 35px 170px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 0, 0, 0.07) 0%,
+      rgba(0, 0, 0, 0.96) 55%
+    );
+
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  border-radius: var(--border-radius);
+  
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+    overflow: hidden;
+
+  }
+
+
+
+
+.price-item:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(255, 0, 0, 0.9);
+
+  box-shadow:
+    0 0 28px rgba(255, 0, 0, 0.18),
+    inset 0 0 40px rgba(255, 0, 0, 0.04);
+}
+
+.price-item::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,0,0,.5);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,0,0,.18) 0%,
+      rgba(255,0,0,.02) 70%
+    );
+
+  box-shadow:
+    inset 0 0 25px rgba(255,0,0,.08),
+    0 0 25px rgba(255,0,0,.12);
+}
+
+
+.price-item-number {
+  font-size: 28px;
+  font-weight: 200;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.price-item-title {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-transform: uppercase;
+
+  margin-bottom: 16px;
+}
+
+.price-item-txt {
+  font-size: 14px;
+  line-height: 1.55;
+  margin-bottom: 14px;
+
+}
+
+
+
+.price-accent {
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--accent-color);
+  line-height: 1;
+  margin: 0 8px;
+}
+
+@media (max-width: 1200px) {
+  .price-list {
+    grid-template-columns: 1fr;
+  }
+
+  .price .title {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price {
+    padding: 80px 0;
+  }
+
+  .price .title {
+    font-size: 42px;
+  }
+
+  .price > .container > p:last-of-type {
+    font-size: 18px;
+  }
+
+  .price-item {
+    min-height: auto;
+    padding: 180px 30px 35px;
+  }
+
+  .price-item::before,
+  .price-item::after {
+    left: 30px;
+    top: 30px;
+  }
+
+  .price-item-title {
+    font-size: 28px;
+  }
+
+  .price-item-txt {
+    font-size: 18px;
+  }
+
+  .price-item-txt:nth-of-type(2) {
+    position: static;
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+
+  .price-accent {
+    font-size: 48px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----- Promo ----- */
