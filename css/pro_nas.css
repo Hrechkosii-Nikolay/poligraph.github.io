@@ -14,6 +14,29 @@
   text-transform: uppercase;
 }
 
+
+
+
+
+
+
+/* ----- Process our-clients ----- */
+
+.process.our-clients {
+  background-image:   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+  url(../img/our-clients.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.process.our-clients .title {
+  max-width: 700px;
+  margin-bottom: 120px;
+}
+
 /* ----- Tools ----- */
 
 .tools {
@@ -169,6 +192,19 @@
 
 .tools .items-txt{
   line-height: 1.3;
+}
+
+
+
+/* ----- cases ----- */
+.cases-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cases-sublist{
+  list-style: disc;
+  padding-left: 20px;
 }
 
 

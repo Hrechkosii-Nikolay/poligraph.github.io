@@ -1,5 +1,8 @@
 /* ----- Hero ----- */
-
+.hero{
+  background-image:   linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                      url(../img/pro_nas-bg.jpg);
+}
 .hero-title{
   font-size: 70px;
   
@@ -19,4 +22,16 @@
 
 
 /* ----- article ----- */
+.article-title{
+  max-width: 400px;
+  font-size: 38px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.article-text{
+  line-height: 1.5;
+
+  max-width: 650px;
+}
 /* ----- call-to-action ----- */
