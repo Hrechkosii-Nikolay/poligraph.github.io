@@ -26,17 +26,18 @@ referrerpolicy="no-referrer"
         <img src="./img/logo.svg" alt="Логотип компанії">
       </a>
       <ul class="menu-list">
-        <li class="menu-item"><a class="link" href="">Послуги</a></li>
+        <li class="menu-item"><a class="link" href="./index.html#services">Послуги</a></li>
         <li class="menu-item"><a class="link" href="">Локаціі в Україні</a></li>
-        <li class="menu-item"><a class="link" href="">Ціни</a></li>
-        <li class="menu-item"><a class="link" href="">Про нас</a></li>
+        <li class="menu-item"><a class="link" href="./index.html#price">Ціни</a></li>
+        <li class="menu-item"><a class="link" href="./index.html#about-us">Про нас</a></li>
         <li class="menu-item"><a class="link" href="">Контакти</a></li>
       </ul>
       <a class="nav-phone" href="tel:+380501234567" rel="nofollow">
         <svg class="phone-icon" width="25" height="25">
              <use href="./img/sprite.svg#telephone">  
         </svg>
-        +38 (050) 123-45-67</a>
+        +38 (050) 123-45-67
+      </a>
     </nav>
   </header>
   <main>
@@ -70,57 +71,65 @@ referrerpolicy="no-referrer"
     
         <ul class="hero-stats">
           <li class="hero-stat">
-            <div class="hero-icon-wrap">
-              <svg class="hero-icon" width="35" height="35">
-                 <use href="./img/sprite.svg#users-2"></use>
+            <div class="icon-wrap">
+              <svg class="icon" width="35" height="35">
+                <use href="./img/sprite.svg#users-2"></use>
               </svg>
-           </div>
-            <div class="hero-stat-info">
-              <p class="hero-stat-title">Тестування персоналу</p>
-              <p class="hero-stat-text">Оцінка доброчесності та надійності кандидата</p>
             </div>
+            <div class="hero-stat-info">
+                <a href="./perevirka_personalu.html">
+                  <p class="hero-stat-title">Тестування персоналу</p>
+                  <p class="hero-stat-text">Оцінка доброчесності та надійності кандидата</p>
+                </a>
+              </div>
           </li>
         
           <li class="hero-stat">
-            <div class="hero-icon-wrap">
-              <svg class="hero-icon" width="35" height="35">
+            <div class="icon-wrap">
+              <svg class="icon" width="35" height="35">
                  <use href="./img/sprite.svg#search-3"></use>
               </svg>
            </div>
             <div class="hero-stat-info">
-              <p class="hero-stat-title">Розслідування інцидентів</p>
-              <p class="hero-stat-text">Встановлення правди у складних та делікатних ситуаціях</p>
+              <a href="./rozsliduvannya_incydentiv.html">
+                <p class="hero-stat-title">Розслідування інцидентів</p>
+                <p class="hero-stat-text">Встановлення правди у складних та делікатних ситуаціях</p>
+              </a>
             </div>
           </li>
         
           <li class="hero-stat">
-            <div class="hero-icon-wrap">
-              <svg class="hero-icon" width="35" height="35">
+            <div class="icon-wrap">
+              <svg class="icon" width="35" height="35">
                  <use href="./img/sprite.svg#briefcase-2"></use>
               </svg>
            </div>
             <div class="hero-stat-info">
-              <p class="hero-stat-title">Бізнес-перевірки</p>
-              <p class="hero-stat-text">Оцінка надійності та чесності співпраці</p>
+              <a href="./biznes_perevirka.html">
+                <p class="hero-stat-title">Бізнес-перевірки</p>
+                <p class="hero-stat-text">Оцінка надійності та чесності співпраці</p>
+              </a>
             </div>
           </li>
         
           <li class="hero-stat">
-            <div class="hero-icon-wrap">
-               <svg class="hero-icon" width="35" height="35">
+            <div class="icon-wrap">
+               <svg class="icon" width="35" height="35">
                   <use href="./img/sprite.svg#scales"></use>
                </svg>
             </div>
             <div class="hero-stat-info">
-              <p class="hero-stat-title">Сімейні та особисті питання</p>
-              <p class="hero-stat-text">Допомога у вирішенні важливих особистих ситуацій</p>
+              <a href="./perevirka_osobustogo_haraktery.html">
+                <p class="hero-stat-title">Сімейні та особисті питання</p>
+                <p class="hero-stat-text">Допомога у вирішенні важливих особистих ситуацій</p>
+              </a>
             </div>
           </li>
         </ul>
     
       </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="container about-us-wrapper">
         <div>
           <p class="section-label">Експертиза</p>
@@ -243,9 +252,8 @@ referrerpolicy="no-referrer"
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="container services-wrapper">
-    
         <div class="services-left">
           <p class="section-label">тестування</p>
     
@@ -257,24 +265,44 @@ referrerpolicy="no-referrer"
         <ul class="services-list">
           <li class="items">
             <a class="services-list-link" href="./perevirka_personalu.html">
+              <div class="icon-wrap services-icon-wrap">
+                <svg class="icon" width="35" height="35">
+                   <use href="./img/sprite.svg#users-2"></use>
+                </svg>
+             </div>
               <h3 class="services-list-title">Кадрове тестування</h3>
               <p class="services-list-txt">Якісний підбір персоналу - основа успіху будь-якої компанії чи організації.</p>
             </a>
           </li>
           <li class="items">
             <a class="services-list-link" href="./rozsliduvannya_incydentiv.html">
+              <div class="icon-wrap services-icon-wrap">
+                <svg class="icon" width="35" height="35">
+                   <use href="./img/sprite.svg#search-3"></use>
+                </svg>
+             </div>
               <h3 class="services-list-title">Розслідування</h3>
               <p class="services-list-txt">Крадіжки, шахрайство, витоки даних та інші інциденти трапляються як у бізнесі, так і в особистому житті.</p>    
             </a>
           </li>
           <li class="items">
             <a class="services-list-link" href="./perevirka_osobustogo_haraktery.html">
+              <div class="icon-wrap services-icon-wrap">
+                <svg class="icon" width="35" height="35">
+                   <use href="./img/sprite.svg#scales"></use>
+                </svg>
+             </div>
               <h3 class="services-list-title">Перевірка особистого характеру</h3>
               <p class="services-list-txt">Сімейні та міжособистісні конфлікти нерідко заходять у глухий кут, адже встановити істину непросто.</p>    
             </a>
           </li>
           <li class="items">
             <a class="services-list-link" href="./biznes_perevirka.html">
+              <div class="icon-wrap services-icon-wrap">
+                <svg class="icon" width="35" height="35">
+                   <use href="./img/sprite.svg#briefcase-2"></use>
+                </svg>
+             </div>
               <h3 class="services-list-title">Бізнес-перевірки</h3>
               <p class="services-list-txt">Фінансова безпека та репутація - критично важливі для будь-якого бізнесу.</p>    
             </a>
@@ -297,32 +325,56 @@ referrerpolicy="no-referrer"
     
         <ul class="benefit-list">
           <li class="benefit-item">
-            <div class="benefit-item-icon"></div>
+            <div class="icon-wrap benefit-icon-wrap">
+              <svg class="icon" width="35" height="35">
+                 <use href="./img/sprite.svg#stats"></use>
+              </svg>
+           </div>
             <h3 class="benefit-item-title">Висока точність результатів</h3>
             <p class="benefit-item-text">Сучасне обладнання та перевірені методики забезпечують точність і об'єктивність висновків.</p>
           </li>
           <li class="benefit-item">
-            <div class="benefit-item-icon"></div>
+                  <div class="icon-wrap benefit-icon-wrap">
+                <svg class="icon" width="35" height="35">
+                   <use href="./img/sprite.svg#diploma"></use>
+                </svg>
+             </div>
             <h3 class="benefit-item-title">Професійний аналіз поліграфологів</h3>
             <p class="benefit-item-text">Досвідчені спеціалісти з багаторічною практикою забезпечують глибокий та неупереджений аналіз.</p>
           </li>
           <li class="benefit-item">
-            <div class="benefit-item-icon"></div>
+                  <div class="icon-wrap benefit-icon-wrap">
+                <svg class="icon" width="35" height="35">
+                   <use href="./img/sprite.svg#time-twenty-four"></use>
+                </svg>
+             </div>
             <h3 class="benefit-item-title">Оперативне проведення досліджень</h3>
             <p class="benefit-item-text">Більшість перевірок проводяться у зручний для вас час і тривають від 1 до 2 годин.</p>
           </li>
           <li class="benefit-item">
-            <div class="benefit-item-icon"></div>
+                  <div class="icon-wrap benefit-icon-wrap">
+                <svg class="icon" width="35" height="35">
+                   <use href="./img/sprite.svg#shield-check"></use>
+                </svg>
+             </div>
             <h3 class="benefit-item-title">Конфіденційність та безпека</h3>
             <p class="benefit-item-text">Гарантуємо повну конфіденційність усіх даних та дотримання етичних стандартів.</p>
           </li>
           <li class="benefit-item">
-            <div class="benefit-item-icon"></div>
+                  <div class="icon-wrap benefit-icon-wrap">
+                <svg class="icon" width="35" height="35">
+                   <use href="./img/sprite.svg#wallet"></use>
+                </svg>
+             </div>
             <h3 class="benefit-item-title">Прозорі тарифи та доступна вартість</h3>
             <p class="benefit-item-text">Чітке ціноутворення без прихованих витрат і додаткових платежів.</p>
           </li>
           <li class="benefit-item">
-            <div class="benefit-item-icon"></div>
+                  <div class="icon-wrap benefit-icon-wrap">
+                <svg class="icon" width="35" height="35">
+                   <use href="./img/sprite.svg#settings-sliders"></use>
+                </svg>
+             </div>
             <h3 class="benefit-item-title">Індивідуальний підхід до кожного випадку</h3>
             <p class="benefit-item-text">Підбираємо оптимальний формат перевірки з урахуванням ваших цілей та ситуації.</p>
           </li>
@@ -330,7 +382,7 @@ referrerpolicy="no-referrer"
     
       </div>
     </section>
-    <section class="price">
+    <section class="price" id="price">
       <div class="container">
           <p class="section-label">Ціна</p>
           <h2 class="title">Вартість послуг</h2>
@@ -428,11 +480,11 @@ referrerpolicy="no-referrer"
         <div class="footer-nav">
           <h3 class="footer-title">Навігація</h3>
           <ul class="footer-list">
-            <li class="footer-item"><a href="">Послуги</a></li>
-            <li class="footer-item"><a href="">Локаціі в Україні</a></li>
-            <li class="footer-item"><a href="">Ціни</a></li>
-            <li class="footer-item"><a href="">Про нас</a></li>
-            <li class="footer-item"><a href="">Контакти</a></li>
+            <li class="footer-item"><a href="./index.html#services">Послуги</a></li>
+            <li class="footer-item"><a href="./index.html#">Локаціі в Україні</a></li>
+            <li class="footer-item"><a href="./index.html#price">Ціни</a></li>
+            <li class="footer-item"><a href="./index.html#about-us">Про нас</a></li>
+            <li class="footer-item"><a href="./index.html#contacts">Контакти</a></li>
           </ul>
         </div>
   
@@ -454,7 +506,7 @@ referrerpolicy="no-referrer"
   
       </div>
       <div class="footer-bottom">
-        <p class="footer-bottom-copy">&copy; 2026 Червона лінія. Всі права захищені.</p>
+        <p class="footer-bottom-copy">&copy; 2026 &#171;Червона лінія&#187;. Усі права захищено.</p>
         <a class="footer-bottom-policy" href="./polityka_konfidentsinosti.pdf" target="_blank" rel="noopener noreferrer">Політика конфіденційності</a>
       </div>
     </div>
