@@ -30,7 +30,7 @@ referrerpolicy="no-referrer"
         <li class="menu-item"><a class="link" href="">Локаціі в Україні</a></li>
         <li class="menu-item"><a class="link" href="./index.html#price">Ціни</a></li>
         <li class="menu-item"><a class="link" href="./index.html#about-us">Про нас</a></li>
-        <li class="menu-item"><a class="link" href="">Контакти</a></li>
+        <li class="menu-item"><a class="link" href="./index.html#contacts">Контакти</a></li>
       </ul>
       <a class="nav-phone" href="tel:+380501234567" rel="nofollow">
         <svg class="phone-icon" width="25" height="25">
@@ -495,6 +495,139 @@ referrerpolicy="no-referrer"
         </div>
       </div>
     </section>
+    <section class="contacts" id="contacts">
+      <div class="container contacts-wrap">
+        <div class="contacts-info">
+          <p class="section-label">зв'язок</p>
+          <h2 class="title sub-title">Контакти</h2>
+          <div class="contacts-info-txt">
+            <p class="contacts-txt">
+              Маєте запитання або хочете замовити перевірку на поліграфі? Напишіть нам будь-яким зручним способом, і ми оперативно з вами зв'яжемося. Працюємо з приватними клієнтами, компаніями та державними установами по всій Україні. Допоможемо визначити найкраще рішення саме для вашої ситуації та організуємо перевірку в найкоротші терміни.
+            </p>
+            <ul class="contacts-list">
+              <li>
+                <a class="contacts-link" href="tel:+380961234567">
+                  <div class="icon-wrap contacts-icon-wrap">
+                    <svg class="icon contacts-icon" width="25" height="25">
+                       <use href="./img/sprite.svg#telephone"></use>
+                    </svg>
+                 </div>
+                 <p>+38 (096) 123-45-67</p> 
+                </a>
+              </li>
+              <li>
+                <a
+                class="contacts-link"
+                href="https://t.me/nastiia_esoterichka"
+              >
+              <div class="icon-wrap contacts-icon-wrap">
+                <svg class="icon contacts-icon" width="25" height="25">
+                   <use href="./img/sprite.svg#paper-plane-outlined-svgrepo-com"></use>
+                </svg>
+             </div>
+               <p>@red_line_poligraph</p></a
+              >
+              </li>
+            </ul>
+
+
+          </div>
+          <form
+          action="telegram.php"
+          method="post"
+          class="modal-form form"
+          id="form"
+        >
+        
+          <ul class="modal-form-list">
+            <li class="modal-form-item">
+                <div class="icon-wrap form-icon-wrap">
+                    <svg class="icon form-icon" width="25" height="25">
+                       <use href="./img/sprite.svg#user-2"></use>
+                    </svg>
+                 </div>
+              <input
+                class="modal-form-input input-name"
+                type="text"
+                pattern="[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+"
+                name="user_name"
+                id="input-name"
+                placeholder="Ім'я"
+                title="Тільки літери"
+                required
+              />
+            </li>        
+            <li class="modal-form-item">
+                <div class="icon-wrap form-icon-wrap">
+                    <svg class="icon form-icon" width="25" height="25">
+                       <use href="./img/sprite.svg#telephone"></use>
+                    </svg>
+                 </div>
+              <input
+                class="modal-form-input input-tel"
+                type="tel"
+                name="user_phone"
+                id="input-tel"
+                placeholder="Телефон"
+              />
+            </li>
+        
+            <li class="modal-form-item">
+                <div class="icon-wrap form-icon-wrap">
+                    <svg class="icon form-icon" width="25" height="25">
+                       <use href="./img/sprite.svg#document-signed"></use>
+                    </svg>
+                 </div>
+              <textarea
+                class="modal-form-input input-message"
+                id="input-message"
+                name="user_message"
+                rows="1"
+                placeholder="Ваше запитання"
+                required
+              ></textarea>
+            </li>
+        
+          </ul>
+        
+          <!-- =========================
+               ANTI-SPAM (HIDDEN)
+          ========================== -->
+        
+          <!-- Honeypot (боти його заповнюють) -->
+          <div style="position:absolute; left:-9999px; opacity:0;">
+            <input
+              type="text"
+              name="website"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </div>
+        
+          <!-- Час створення форми -->
+          <input type="hidden" name="form_time" value="<?php echo time(); ?>">
+          <input type="hidden" name="page_url">
+          <input type="hidden" name="time_on_page">
+        
+          <a class="modal-form-btn main-btn contacts-btn" type="submit"> <p class="main-btn-text"> Відправити</p></a>
+        </form>
+
+
+          
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d512.5863712227901!2d30.450133891781217!3d50.42566566913253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceae47abc327%3A0xab6f1f6045970c7a!2z0KHQv9C-0YDRgtGC0L7QstCw0YDQuA!5e0!3m2!1sru!2sua!4v1783454443558!5m2!1sru!2sua"
+          width="650" 
+          height="650" 
+          allowfullscreen="" 
+          title="Локація поліграфолога на Google Maps"
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map-frame">
+        </iframe>
+        </div>
+      </div>
+    </section> 
   </main>
   <footer class="footer">
     <div class="container">
