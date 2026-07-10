@@ -642,7 +642,7 @@ margin-bottom: 15px;
 
 .stages-item {
   display: grid;
-  grid-template-columns: 52px auto 280px 1fr;
+  grid-template-columns: 60px auto 280px 1fr;
   align-items: center;
   gap: 0 24px;
   padding: 32px 0;
@@ -653,14 +653,15 @@ margin-bottom: 15px;
   border-top: 1px solid var(--border-color);
 }
 
-.stages-item::before {
+/* .stages-item::before {
   content: '';
   width: 52px;
   height: 52px;
   border-radius: 50%;
   background: #2a2a2a;
   display: block;
-}
+} */
+
 
 .stages-item-number {
   /* font-family: 'Unbounded', sans-serif; */
