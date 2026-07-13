@@ -335,6 +335,12 @@ ul {
 .process-item:nth-child(3) .process-item-title::before {
   content: "03";
 }
+.process-item:nth-child(4) .process-item-title::before {
+  content: "04";
+}
+.process-item:nth-child(5) .process-item-title::before {
+  content: "05";
+}
 
 .process-item-title::before {
   display: flex;

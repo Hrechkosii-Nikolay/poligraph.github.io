@@ -1,22 +1,5 @@
 /* ----- Hero ----- */
 
-/* .hero-title{
-  font-size: 70px;
-  
-  margin-bottom: 35px;
-}
-
-.hero-sub-title{
-  font-size: 20px;
-  margin-bottom: 30px;
-  max-width: 565px;
-}
-
-.hero-txt{
-  max-width: 600px;
-  margin-bottom: 65px;
-} */
-
 .hero{
     background-image:   linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
                         url(../img/rozsliduvannya_incydentiv-bg.jpg);
@@ -38,51 +21,6 @@
   line-height: 1.4;
 }
 
-/* ----- Cases ----- */
-/* .cases .title{
-  margin-bottom: 90px;
-}
-
-.cases-list{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.cases-item{
-  max-width: 330px;
-  padding: 50px;
-  border: var(--border);
-  border-radius: var(--border-radius);
-}
-
-.cases-item-title{
-  margin-bottom: 20px;
-} */
-/* ----- Benefits ----- */
-/* 
-.benefits .title{
-  margin-top: 150px;
-  margin-bottom: 120px;
-  max-width: 750px;
-}
-
-.benefits-list{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
-
-  max-width: 65%;
-  margin-left: auto;
-}
-
-.benefits-item{
-  max-width: 280px;
-}
-
-.benefits-item-title{
-  margin-bottom: 30px;
-} */
 /* ----- Research ----- */
 
 .research .title{
