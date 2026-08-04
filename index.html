@@ -47,7 +47,7 @@ referrerpolicy="no-referrer"
           <h1 class="hero-title">Перевірка<br> на поліграфі</h1>
           <p class="hero-subtitle">Професійні перевірки на поліграфі для прийняття важливих рішень без ризиків.</p>
           <p class="hero-text">Ми допомагаємо бізнесу, приватним особам і державним структурам отримати достовірну інформацію та захиститися від прихованих загроз.</p>
-          <a href="#" class="main-btn">
+          <a href="#" class="main-btn" data-open-modal>
             <p class="main-btn-text">Зв'язатися з нами</p>
           
             <span class="main-btn-circle">
@@ -213,7 +213,7 @@ referrerpolicy="no-referrer"
           <p class="cta-text">
             Зв’яжіться з нами та отримайте <span class="accent">безкоштовну</span>  консультацію!
           </p>
-          <a href="#" class="main-btn">
+          <a href="#" class="main-btn" data-open-modal>
             <p class="main-btn-text">Зв'язатися з нами</p>
           
             <span class="main-btn-circle">
@@ -484,7 +484,7 @@ referrerpolicy="no-referrer"
         </div>
         <div class="promo-action">
           <p class="promo-action-txt">Замовити перевірку на поліграфі можна за телефоном або через форму зворотного зв’язку на нашому сайті.</p>
-          <a href="#" class="main-btn">
+          <a href="#" class="main-btn" data-open-modal>
             <p class="main-btn-text">Зв'язатися з нами</p>
           
             <span class="main-btn-circle">
@@ -657,6 +657,143 @@ referrerpolicy="no-referrer"
         </div>
       </div>
     </section> 
+    <div class="backdrop is-close" data-backdrop style="display: non;">
+      <div class="modal">
+        <button class="close-modal" type="button" data-close-modal>
+          <div class="icon-wrap contacts-icon-wrap">
+            <svg class="icon contacts-icon" width="25" height="25" aria-label="закрити модальне вікно">
+               <use href="./img/sprite.svg#times-solid-svgrepo-com"></use>
+            </svg>
+         </div>
+        </button>
+        <h3 class="modal-txt">Зворотній зв'язок</h3>
+        <form
+        action="telegram.php"
+        method="post"
+        class="modal-form form"
+        id="form"
+      >
+      
+        <ul class="modal-form-list">
+          <li class="modal-form-item">
+              <div class="icon-wrap form-icon-wrap">
+                  <svg class="icon form-icon" width="25" height="25">
+                     <use href="./img/sprite.svg#user-2"></use>
+                  </svg>
+               </div>
+            <input
+              class="modal-form-input input-name"
+              type="text"
+              pattern="[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+"
+              name="user_name"
+              id="input-name"
+              placeholder="Ім'я"
+              title="Тільки літери"
+              required
+            />
+          </li>        
+          <li class="modal-form-item">
+              <div class="icon-wrap form-icon-wrap">
+                  <svg class="icon form-icon" width="25" height="25">
+                     <use href="./img/sprite.svg#telephone"></use>
+                  </svg>
+               </div>
+            <input
+              class="modal-form-input input-tel"
+              type="tel"
+              name="user_phone"
+              id="input-tel"
+              placeholder="Телефон"
+            />
+          </li>
+      
+          <li class="modal-form-item">
+              <div class="icon-wrap form-icon-wrap">
+                  <svg class="icon form-icon" width="25" height="25">
+                     <use href="./img/sprite.svg#document-signed"></use>
+                  </svg>
+               </div>
+            <textarea
+              class="modal-form-input input-message"
+              id="input-message"
+              name="user_message"
+              rows="1"
+              placeholder="Ваше запитання"
+              required
+            ></textarea>
+          </li>
+      
+        </ul>
+      
+        <!-- =========================
+             ANTI-SPAM (HIDDEN)
+        ========================== -->
+      
+        <!-- Honeypot (боти його заповнюють) -->
+        <div style="position:absolute; left:-9999px; opacity:0;">
+          <input
+            type="text"
+            name="website"
+            tabindex="-1"
+            autocomplete="off"
+          />
+        </div>
+      
+        <!-- Час створення форми -->
+        <input type="hidden" name="form_time" value="<?php echo time(); ?>">
+        <input type="hidden" name="page_url">
+        <input type="hidden" name="time_on_page">
+      
+        <a class="modal-form-btn main-btn contacts-btn modal-btn" type="submit"> 
+          <p class="main-btn-text"> Відправити</p>
+          <span class="main-btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m13 5 7 7-7 7"></path>
+            </svg>
+          </span></a>
+      </form>
+
+
+        <div class="modal-contacts"> 
+          <ul class="modal-contacts-list">
+            <li>
+              <a class="contacts-link" href="tel:+380961234567">
+                <div class="icon-wrap contacts-icon-wrap">
+                  <svg class="icon contacts-icon" width="25" height="25">
+                     <use href="./img/sprite.svg#telephone"></use>
+                  </svg>
+               </div>
+               <p>+38 (096) 123-45-67</p> 
+              </a>
+            </li>
+            <li>
+              <a
+              class="contacts-link"
+              href="https://t.me/nastiia_esoterichka"
+            >
+            <div class="icon-wrap contacts-icon-wrap">
+              <svg class="icon contacts-icon" width="25" height="25">
+                 <use href="./img/sprite.svg#paper-plane-outlined-svgrepo-com"></use>
+              </svg>
+           </div>
+             <p>@red_line_poligraph</p></a
+            >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <div class="container">
@@ -706,6 +843,7 @@ referrerpolicy="no-referrer"
       </div>
     </div>
   </footer>
-  <!-- <script src="js/hero-canvas.js"></script> -->
+  <script src="js/close-modal.js"></script>
+  <script src="js/noScrollModal.js"></script>
 </body>
 </html>
