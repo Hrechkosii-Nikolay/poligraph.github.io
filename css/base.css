@@ -1783,6 +1783,8 @@ display: block;
  bottom: 0;
  z-index: 999;
   background-color: #646464b4;
+
+  transition: opacity 0.3s ease;
 }
 
 .backdrop.is-close{
@@ -1822,6 +1824,10 @@ display: block;
   cursor: pointer;
   -webkit-appearance: none; /* прибирає нативний вигляд у Safari/Chrome */
   appearance: none;
+}
+
+.body-no-scroll {
+  overflow: hidden;
 }
 
 .modal-contacts-list{
