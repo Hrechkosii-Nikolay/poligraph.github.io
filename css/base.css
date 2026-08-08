@@ -1780,11 +1780,12 @@ display: block;
   top: 0;
   left: 0;
   right: 0;
- bottom: 0;
- z-index: 999;
+  bottom: 0;
+  z-index: 999;
+
   background-color: #646464b4;
 
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
 }
 
 .backdrop.is-close{
@@ -1801,10 +1802,11 @@ display: block;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   min-height: 300px;
   min-width: 200px;
-  padding: 20px;
+  padding: 25px;
 
   background-color: var(--bg-color);
   border-radius: var(--border-radius);
@@ -1830,9 +1832,13 @@ display: block;
   overflow: hidden;
 }
 
+.modal-contacts{
+margin-top: 10px;
+}
 .modal-contacts-list{
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 
