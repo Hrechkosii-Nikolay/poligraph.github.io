@@ -56,6 +56,61 @@ ul {
   margin: 0;
 }
 
+button {
+  /* Скидання стандартних стилів браузера */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background: none;
+  border: none;
+  outline: none;
+
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
+
+  cursor: pointer;
+
+  /* Забирає синю рамку/тінь при фокусі в деяких браузерах */
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus {
+  outline: none;
+}
+
+.form-notify {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.form-notify.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.form-notify.success {
+  background: #2ecc71;
+}
+
+.form-notify.error {
+  background: #e74c3c;
+}
+
 /*
   |============================
   |            Main-btn

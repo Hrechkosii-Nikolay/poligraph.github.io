@@ -1,0 +1,1 @@
+const phoneInputs=document.querySelectorAll(".input-tel"),maskOptions={mask:"+{38} (\\000)000-00-00"};phoneInputs.forEach(e=>{IMask(e,maskOptions),e.addEventListener("input",function(){let t=e.value;/^\+38\(0[0-9]/.test(t)||(e.value=t.replace(/^\+38\(0[^0-9]/,"+38(0"))})});

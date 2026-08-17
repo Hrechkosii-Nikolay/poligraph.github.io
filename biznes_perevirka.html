@@ -452,9 +452,9 @@
           action="telegram.php"
           method="post"
           class="modal-form form"
-          id="form"
+          id="form-modal"
         >
-        
+        <div id="form-notify" class="form-notify" role="status" aria-live="polite"></div>
           <ul class="modal-form-list">
             <li class="modal-form-item">
                 <div class="icon-wrap form-icon-wrap">
@@ -525,8 +525,8 @@
           <input type="hidden" name="page_url">
           <input type="hidden" name="time_on_page">
         
-          <a class="modal-form-btn main-btn contacts-btn modal-btn" type="submit"> 
-            <p class="main-btn-text"> Відправити</p>
+          <div class="modal-form-btn main-btn contacts-btn modal-btn"> 
+            <button class="main-btn-text">Відправити</button>
             <span class="main-btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -542,7 +542,7 @@
                 <path d="M5 12h14"></path>
                 <path d="m13 5 7 7-7 7"></path>
               </svg>
-            </span></a>
+            </span></div>
         </form>
   
   
@@ -647,15 +647,19 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p class="footer-bottom-copy">
-            &copy; 2026 Червона лінія. Всі права захищені.
-          </p>
+          <p class="footer-bottom-copy">&copy; <span id="year"></span> &#171;Червона лінія&#187;. Усі права захищено.</p>
           <a class="footer-bottom-policy" href="">Політика конфіденційності</a>
         </div>
       </div>
     </footer>
 
+    <script src="js/imask.js"></script>
+    <script src="js/inputmask.js"></script>
+    <script src="js/telegram-data.js"></script>
+    <script src="js/valid-tel.js"></script>
     <script src="js/close-modal.js"></script>
+    <script src="js/year.js"></script>
     <script src="js/faq.js"></script>
+    <script src="js/form-notification.js"></script>
   </body>
 </html>
