@@ -1896,7 +1896,7 @@ display: block;
   right: 0;
   bottom: 0;
   z-index: 999;
-
+  opacity: 1;
   background-color: #646464b4;
 
   transition: opacity 0.5s ease;
@@ -1924,6 +1924,7 @@ display: block;
 
   background-color: var(--bg-color);
   border-radius: var(--border-radius);
+
 }
 
 .modal-txt{

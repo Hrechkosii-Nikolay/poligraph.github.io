@@ -10,6 +10,7 @@ forms.forEach(function (form) {
     const phoneDigits = phoneInput.value.replace(/\D/g, "");
     if (phoneDigits.length < 12) {
       e.preventDefault();
+      e.stopImmediatePropagation(); 
       alert("Будь ласка, введіть повний номер телефону");
       return;
     }
