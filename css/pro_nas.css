@@ -1,13 +1,13 @@
 /* ----- Hero ----- */
 
-.hero{
+/* .hero{
   background-image:   linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
                       url(../img/pro_nas-bg.jpg);
-}
+} */
 
-.process .title{
+/* .process .title{
   margin-bottom: 25px;
-}
+} */
 
 .process-text{
   margin-bottom: 100px;
@@ -125,19 +125,14 @@
 }
 
 .tools-list .items:nth-child(1) img {
-  /* width: 320px; */
-  /* right: 34px; */
   bottom: 25px;
-  /* top: 50%; */
+
   left: 50%;
   transform: translateX(-50%);
 }
 
 .tools-list .items:nth-child(2) img {
-  /* width: 420px; */
-  /* right: 50%; */
   bottom: 25px;
-  /* top: 50%; */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -166,15 +161,6 @@
   border-radius: 50%;
 
   transform: translateX(-50%);
-
-  /* background:
-    radial-gradient(
-      circle,
-      rgba(255, 0, 0, 0.55) 0%,
-      rgba(255, 0, 0, 0.16) 38%,
-      rgba(255, 0, 0, 0.04) 60%,
-      transparent 75%
-    ); */
 
   filter: blur(18px);
 

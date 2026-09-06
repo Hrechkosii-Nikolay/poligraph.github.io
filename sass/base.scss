@@ -1,17 +1,5 @@
-$main-color: #ffffff;
-$secondary-color: #999999;
-$accent-color: #c90000;
-$bg-color: #0C0C0E;
-$number-color: #7D7D7D;
-$border-color: #444444;
-
-$border: 1px solid #444444;
-$border-accent: 1px solid #c90000;
-$border-accent-sec: 1px solid rgba(224, 43, 43, 0.4);
-$border-radius: 10px;
-
-
-
+@import './variables';
+@import './hero';
 
 body {
   color: $main-color;
@@ -922,70 +910,7 @@ pointer-events: auto;
 
 }
 
-/*
-  |============================
-  |           HERO        
-  |============================
-*/
 
-.hero .container {
-  position: relative;
-  z-index: 1;           /* контент над canvas */
-}
-
-.hero{
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  position: relative;   
-  overflow: hidden;     
-}
-
-/* #hero-canvas {
-  position: absolute;
-  inset: 0;                    
-  width: 100%;
-  height: 100%;
-  z-index: 0;                  
-  pointer-events: none;       
-} */
-
-.hero-title{
-  font-weight: 400;
-  font-size: 98px;
-  line-height: 1.0;
-  margin-bottom: 32px;;
-  text-transform: uppercase;
-}
-
-.hero-sub-title{
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 16px;
-
-  max-width: 565px;
-}
-
-.hero-txt{
-  max-width: 645px;
-  font-size: 15px;
-  line-height: 1.7;
-  margin-bottom: 25px;
-  /* color: $secondary-color; */
-}
-
-.hero-features-list{
-  display: flex;
-  gap: 25px;
-  margin-bottom: 30px;
-}
-
-.hero-features-item{
-  display: flex;
-  align-items: center;
-  min-width: 135px;
-}
 
 
 
