@@ -1,0 +1,43 @@
+/* ----- Promo ----- */
+
+.promo{
+  background: linear-gradient(
+    to bottom,
+    #0C0C0E 0%,
+    #120000 70%,
+    #2a0000 100%
+  );
+}
+
+.promo-wrapper{
+  display: flex;
+}
+
+.promo .title{
+  margin-bottom: 25px;
+}
+
+.promo-heading{
+  max-width: 465px;
+}
+.promo-action{
+  max-width: 350px;
+  margin-left: auto;
+}
+
+.promo-action-txt{
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .promo-wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .promo-heading,
+  .promo-action {
+    max-width: none;
+    margin-left: 0;
+  }
+}

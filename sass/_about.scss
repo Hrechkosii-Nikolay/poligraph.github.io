@@ -1,0 +1,99 @@
+/* ------About-us---------- */
+
+.about-us {
+  position: relative;
+  padding: 140px 0;
+}
+
+.about-us::before {
+  content: "";
+  position: absolute;
+  left: -120px;
+  bottom: -90px;
+  width:2200px;
+  height: 620px;
+  background:
+    repeating-radial-gradient(
+      ellipse at center,
+      rgba(255, 0, 0, 0.22) 0px,
+      rgba(255, 0, 0, 0.22) 1px,
+      transparent 1px,
+      transparent 14px
+    );
+
+  opacity: 0.45;
+
+  transform: rotate(-8deg);
+  pointer-events: none;
+}
+
+.about-us-wrapper {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  align-items: start;
+}
+
+.about-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  list-style: none;
+}
+
+.about-us-list::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 120%;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.12) 20%,
+    rgba(255, 255, 255, 0.12) 80%,
+    transparent
+  );
+}
+
+.about-us-list .items p {
+  line-height: 1.45;
+}
+
+@media (max-width: 1199px) {
+  .about-us {
+    padding: 96px 0;
+  }
+
+  .about-us-wrapper {
+    gap: 64px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us {
+    padding: 64px 0;
+  }
+
+  .about-us::before,
+  .about-us-list::after {
+    display: none;
+  }
+
+  .about-us-wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-us-list {
+    gap: 24px;
+  }
+}
+
+/* ----- About service ----- */

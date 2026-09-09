@@ -1,36 +1,46 @@
+@import '../variables';
+
 /* ----- Hero ----- */
+
 /* .hero{
     background-image:   linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
                         url(../img/rozsliduvannya_incydentiv-bg.jpg);
 } */
+
+
+
 /* ----- Process in base ----- */
+
 /* ----- Call-to-action in base ----- */
+
 /* ----- Incidents ----- */
-.incidents-content {
+.incidents-content{
   display: flex;
   justify-content: space-between;
   gap: 100px;
 }
-
-.incidents-text {
+.incidents-text{
   line-height: 1.4;
 }
 
 /* ----- Research ----- */
-.research .title {
+
+.research .title{
   margin-bottom: 85px;
-  max-width: 685px;
+  max-width: 685px
 }
 
-.research-content {
+.research-content{
   display: flex;
   justify-content: space-between;
+
   padding: 70px 90px;
   border: var(--border);
   border-radius: var(--border-radius);
 }
 
-.research-text {
+
+.research-text{
   max-width: 400px;
   line-height: 1.5;
 }
@@ -41,13 +51,13 @@
     flex-direction: column;
     gap: 24px;
   }
+
   .research .title {
     margin-bottom: 40px;
   }
+
   .research-content {
     padding: 32px 24px;
   }
 }
 /* ----- Faq ----- */
-
-/*# sourceMappingURL=rozsliduvannya_incydentiv.css.map */

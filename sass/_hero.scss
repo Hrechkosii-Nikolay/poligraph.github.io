@@ -63,6 +63,30 @@
                       url(../img/main-hero-bg.jpg);
 }
 
+.hero.city-kyiv {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/city-kyiv-hero.jpg);
+}
+
+.hero.city-kharkiv {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/city-kharkiv-hero.jpg);
+}
+
+.hero.city-odesa {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/city-odesa-hero.jpg);
+}
+
+.hero.city-dnipro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/city-dnipro-hero.jpg);
+}
+
+.hero.city-lviv {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/city-lviv-hero.jpg);
+}
+
+.hero.city-vinnytsia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/city-vinnytsia-hero.jpg);
+}
+
 
 .hero-content {
   max-width: 700px;
@@ -202,4 +226,71 @@
       inset 0 0 30px rgba(255, 0, 0, 0.12),
       0 0 35px rgba(255, 0, 0, 0.2);
       cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .hero {
+    height: auto;
+    min-height: 760px;
+  }
+
+  .hero-title {
+    font-size: 72px;
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .hero-stat::before {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 0;
+    padding-top: 48px;
+    padding-bottom: 56px;
+    background-position: center;
+  }
+
+  .hero-content {
+    padding-bottom: 40px;
+  }
+
+  .hero-title {
+    font-size: clamp(42px, 12vw, 56px);
+    margin-bottom: 22px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .hero-txt {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stat {
+    padding: 0;
+  }
+
+  .icon-wrap {
+    width: 56px;
+    height: 56px;
+  }
+
+  .icon {
+    width: 28px;
+    height: 28px;
+  }
 }
