@@ -10,6 +10,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/main-hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   position: relative;
   overflow: hidden;
 }

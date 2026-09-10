@@ -11,6 +11,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/main-hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   position: relative;
   overflow: hidden;
 }
@@ -544,10 +545,11 @@ button:focus {
 .process-item::before {
   content: "";
   position: absolute;
+  /* Починається на рівні номера, не перетинаючи текст етапу. */
   left: 0;
+  top: 72px;
   bottom: 0;
   width: 1px;
-  height: 320px;
   background: #444444;
 }
 
@@ -1782,6 +1784,15 @@ button:focus {
     opacity: 1;
     pointer-events: auto;
   }
+  /* На сенсорних екранах :hover може залишатися активним після натискання. */
+  .menu-item:hover > .submenu {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .menu-item.is-submenu-open:hover > .submenu {
+    opacity: 1;
+    pointer-events: auto;
+  }
   .cta .container {
     gap: 48px;
   }
@@ -2127,10 +2138,9 @@ button:focus {
     padding-left: 40px;
   }
   .process-item::before {
-    top: auto;
+    top: 72px;
     bottom: 0;
     left: 0;
-    height: 320px;
   }
   .process-item::after {
     top: auto;

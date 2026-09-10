@@ -1,7 +1,7 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('.main-nav');
 
-if (menuToggle && mainNav) {
+if (mainNav) {
   const submenuItems = mainNav.querySelectorAll('.menu-item.has-submenu');
   const locationsFooterLink = document.querySelector('.footer-item a[href="#locations"]');
 
@@ -14,15 +14,19 @@ if (menuToggle && mainNav) {
 
   const closeMenu = () => {
     mainNav.classList.remove('is-menu-open');
-    menuToggle.setAttribute('aria-expanded', 'false');
-    menuToggle.setAttribute('aria-label', 'Відкрити меню');
+    if (menuToggle) {
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Відкрити меню');
+    }
     closeSubmenus();
   };
 
   const openMenu = () => {
     mainNav.classList.add('is-menu-open');
-    menuToggle.setAttribute('aria-expanded', 'true');
-    menuToggle.setAttribute('aria-label', 'Закрити меню');
+    if (menuToggle) {
+      menuToggle.setAttribute('aria-expanded', 'true');
+      menuToggle.setAttribute('aria-label', 'Закрити меню');
+    }
   };
 
   const openSubmenu = (item) => {
@@ -31,16 +35,18 @@ if (menuToggle && mainNav) {
     item.querySelector('.link').setAttribute('aria-expanded', 'true');
   };
 
-  menuToggle.addEventListener('click', () => {
-    const isOpen = mainNav.classList.toggle('is-menu-open');
+  if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('is-menu-open');
 
-    if (isOpen) {
-      menuToggle.setAttribute('aria-expanded', 'true');
-      menuToggle.setAttribute('aria-label', 'Закрити меню');
-    } else {
-      closeMenu();
-    }
-  });
+      if (isOpen) {
+        menuToggle.setAttribute('aria-expanded', 'true');
+        menuToggle.setAttribute('aria-label', 'Закрити меню');
+      } else {
+        closeMenu();
+      }
+    });
+  }
 
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
