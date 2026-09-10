@@ -20,13 +20,14 @@
     <link rel="stylesheet" href="./css/rozsliduvannya_incydentiv.css">
     <link rel="stylesheet" href="./css/main.css">
   </head>
-<body>
+<body class="has-mobile-menu">
   <header>
     <nav class="container main-nav">
       <a href="./index.html" class="logo">
         <img src="./img/logo.svg" alt="Логотип компанії">
       </a>
-      <ul class="menu-list">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Відкрити меню"><span></span><span></span><span></span></button>
+      <ul class="menu-list" id="mobile-menu">
         <li class="menu-item has-submenu"><a class="link" href="./index.html#services">Послуги</a>
         <ul class="submenu">
           <li class="submenu-item"><a href="./perevirka_personalu.html">ТЕСТУВАННЯ ПЕРСОНАЛУ</a></li>
