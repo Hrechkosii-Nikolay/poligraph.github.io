@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Перевірка особистого характеру</title>
+  <title>Як підготуватися до перевірки на поліграфі | Червона лінія</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -16,18 +16,19 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
   />
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/base.min.css">
+  <link rel="stylesheet" href="./css/main.min.css" />
   <link rel="stylesheet" href="./css/blog.css">
 </head>
-<body>
+<body class="site-page has-mobile-menu article-page">
   <header>
     <nav class="container main-nav">
       <a href="./index.html" class="logo">
         <img src="./img/logo.svg" alt="Логотип компанії">
       </a>
-      <ul class="menu-list">
-        <li class="menu-item"><a class="link" href="./index.html#services">Послуги</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Відкрити меню"><span></span><span></span><span></span></button>
+      <ul class="menu-list" id="mobile-menu">
+        <li class="menu-item has-submenu"><a class="link" href="./index.html#services">Послуги</a>
         <ul class="submenu">
           <li class="submenu-item"><a href="./perevirka_personalu.html">ТЕСТУВАННЯ ПЕРСОНАЛУ</a></li>
           <li class="submenu-item"><a href="./rozsliduvannya_incydentiv.html">РОЗСЛІДУВАННЯ ІНЦИДЕНТІВ</a></li>
@@ -39,14 +40,14 @@
           <li class="submenu-item"><a href="./sudova_ekspertyza.html">СУДОВА ЕКСПЕРТИЗА</a></li>
         </ul>
         </li>
-        <li class="menu-item"><a class="link" href="">Локаціі в Україні</a>
+        <li class="menu-item has-submenu"><a class="link" href="">Локаціі в Україні</a>
           <ul class="submenu">
-            <li class="submenu-item"><a href="">Київ</a></li>
-            <li class="submenu-item"><a href="">Харків</a></li>
-            <li class="submenu-item"><a href="">Одеса</a></li>
-            <li class="submenu-item"><a href="">Дніпро</a></li>
-            <li class="submenu-item"><a href="">Львів</a></li>
-            <li class="submenu-item"><a href="">Вінниця</a></li>
+            <li class="submenu-item"><a href="./kyiv-poligraph.html">Київ</a></li>
+            <li class="submenu-item"><a href="./kharkiv-poligraph.html">Харків</a></li>
+            <li class="submenu-item"><a href="./odesa-poligraph.html">Одеса</a></li>
+            <li class="submenu-item"><a href="./dnipro-poligraph.html">Дніпро</a></li>
+            <li class="submenu-item"><a href="./lviv-poligraph.html">Львів</a></li>
+            <li class="submenu-item"><a href="./vinnytsia-poligraph.html">Вінниця</a></li>
           </ul>
         </li>
         <li class="menu-item"><a class="link" href="./index.html#price">Ціни</a></li>
@@ -62,39 +63,33 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero blog">
       <div class="container">
-        <h1 class="title hero-title">Події та актуальна інформація в сучасній поліграфології</h1>
-        <p class="title hero-sub-title">Слідкуйте за останніми подіями, новими дослідженнями та професійними тенденціями у сфері поліграфології.</p>
-        <p class="hero-txt">Світ поліграфних досліджень постійно розвивається: удосконалюються методики тестування, з'являється нове обладнання, оновлюються професійні стандарти та практики. У цьому розділі ми публікуємо актуальні новини, огляди технологій, результати досліджень і важливі події галузі, щоб допомогти фахівцям, представникам бізнесу та всім зацікавленим особам бути в курсі сучасних тенденцій і змін у сфері поліграфології.</p>
-        <a href="#" class="main-btn" data-open-modal>
-          <p class="main-btn-text">Зв'язатися з нами</p>
-        
-          <span class="main-btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="26"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M5 12h14"></path>
-              <path d="m13 5 7 7-7 7"></path>
-            </svg>
-          </span>
-        </a>
+        <h1 class="title hero-title">Як підготуватися до перевірки на поліграфі</h1>
+        <p class="title hero-subtitle">Практичні рекомендації перед тестуванням на поліграфі</p>
+        <p class="hero-txt">Перевірка на поліграфі не потребує спеціальних навичок. Розповідаємо, як почуватися впевнено перед дослідженням, чого очікувати від процедури та чому відвертість важливіша за спроби «підготуватися».</p>
+        <div class="hero-article-content">
+          <h2 class="hero-article-heading">Коротко про перевірку на поліграфі</h2>
+          <p>Тестування на поліграфі використовують під час перевірки персоналу, внутрішніх розслідувань, ділових перевірок і в особистих ситуаціях. Процедура відбувається лише за добровільною згодою: поліграфолог пояснює мету дослідження, узгоджує теми запитань і відповідає на всі важливі запитання.</p>
+          <p>Найкраща підготовка — звичайний режим дня: відпочинок, відмова від алкоголю напередодні та чесна розмова з фахівцем про самопочуття або ліки, які ви приймаєте.</p>
+        </div>
       </div>
     </section>
     <section class="article">
       <div class="container">
-        <h2 class="article-title title">Lorem ipsum dolor sit amet</h2>
-        <p class="article-text">Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+        <h2 class="article-title title">Як відбувається перевірка на поліграфі</h2>
+        <p class="article-text">Перевірка на поліграфі починається з попередньої розмови. Фахівець з’ясовує обставини справи, уточнює запит клієнта та пояснює порядок тестування. Далі формують чіткі запитання, що стосуються конкретних фактів, а не припущень. Такий підхід допомагає зробити дослідження зрозумілим для людини та корисним для замовника.</p>
+        <p class="article-text">Під час тестування поліграфолог фіксує індивідуальні психофізіологічні реакції на запитання. Після завершення процедури спеціаліст аналізує отримані дані та готує висновок у межах погодженого запиту. Результат перевірки на поліграфі розглядають разом з іншими фактами та матеріалами ситуації.</p>
+
+        <h2 class="article-subtitle sub-title">Підготовка до тестування на поліграфі</h2>
+        <p class="article-text">Найкраща підготовка до перевірки — звичайний режим дня. Напередодні варто добре відпочити, не вживати алкоголь та прибути без поспіху. Якщо ви приймаєте ліки або маєте особливості самопочуття, повідомте про це фахівця до початку процедури.</p>
+        <p class="article-text">Не потрібно шукати способи вплинути на результат або заздалегідь готувати «правильні» відповіді. Професійний поліграфолог враховує індивідуальні реакції та ставить запитання зрозуміло й коректно. Відверта розмова перед дослідженням дає змогу врахувати важливі деталі та створює спокійні умови для проходження процедури.</p>
+
+        <h2 class="article-subtitle sub-title">Конфіденційність і добровільна згода</h2>
+        <p class="article-text">Поліграфне дослідження проводиться за добровільною згодою випробуваного. Інформація про запитання, перебіг тестування та висновок має конфіденційний характер і передається відповідно до домовленостей із замовником та учасником перевірки. Це особливо важливо під час перевірки персоналу, корпоративних інцидентів і особистих звернень.</p>
+        <p class="article-text">Якщо ви плануєте тестування на поліграфі в Києві чи іншому місті України, заздалегідь підготуйте короткий опис ситуації та перелік тем, які потрібно перевірити. Це допоможе поліграфологу запропонувати доречний формат дослідження та сформувати точні запитання.</p>
         <p class="article-date">
-          <time datetime="2026-03-15">15/03/2026</time>
+          <time datetime="2026-10-11">11/10/2026</time>
         </p>
       </div>
     </section>
@@ -346,5 +341,6 @@
   <script src="js/year.js"></script>
   <script src="js/form-notification.js"></script>
   <script src="js/phone-click.js"></script>
+  <script src="js/mobile-menu.js"></script>
 </body>
 </html>

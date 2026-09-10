@@ -1,31 +1,5 @@
-/* ----- Hero ----- */
-/* .hero{
-  background-image:   linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                      url(../img/pro_nas-bg.jpg);
-} */
-/* .process .title{
-  margin-bottom: 25px;
-} */
-.process-text {
-  margin-bottom: 100px;
-  text-transform: uppercase;
-}
-
-/* ----- Process our-clients ----- */
-.process.our-clients {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/our-clients.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-}
-
-.process.our-clients .title {
-  max-width: 700px;
-  margin-bottom: 120px;
-}
-
 /* ----- Tools ----- */
+
 .tools {
   position: relative;
   padding: 140px 0;
@@ -37,6 +11,7 @@
   margin-bottom: 52px;
   line-height: 1.2;
   letter-spacing: 0.05em;
+
 }
 
 .tools-list {
@@ -47,15 +22,18 @@
 
 .tools-list .items {
   position: relative;
+
   min-height: 540px;
   padding: 42px;
+
   border-radius: 34px;
   border: 1px solid rgba(255, 0, 0, 0.45);
+
   overflow: hidden;
 }
 
 .tools-list .items:nth-child(3) {
-  grid-column: 1/-1;
+  grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
   min-height: 420px;
@@ -63,19 +41,24 @@
 
 .items-number {
   margin-bottom: 24px;
+
   font-size: 20px;
   font-weight: 300;
   line-height: 1;
-  color: var(--accent-color);
+
+  color: $accent-color;
 }
 
 .items-number::after {
   content: "";
   display: block;
+
   width: 24px;
   height: 1px;
+
   margin-top: 10px;
-  background: var(--accent-color);
+
+  background: $accent-color;
 }
 
 .tools-list .sub-title {
@@ -85,88 +68,131 @@
 .tools-img {
   position: absolute;
   right: auto;
-  bottom: 24px;
+  bottom: 24px; 
   margin: 15px auto;
+
   width: 400px;
   height: auto;
   object-fit: contain;
+
   z-index: 2;
-  filter: drop-shadow(0px 10px 6px rgba(255, 0, 0, 0.5));
+
+  filter:
+    drop-shadow(0px 10px 6px rgba(255, 0, 0, 0.5));
 }
 
 .tools-list .items:nth-child(1) img {
-  bottom: 25px;
+  bottom: 45px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .tools-list .items:nth-child(2) img {
-  bottom: 25px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .tools-list .items:nth-child(3) .tools-img {
   position: relative;
+
   width: 350px;
+
   right: auto;
   bottom: auto;
+
   margin-left: auto;
 }
 
 .tools-list .items::before {
   content: "";
+
   position: absolute;
   left: 50%;
   bottom: -140px;
+
   width: 340px;
   height: 340px;
+
   border-radius: 50%;
+
   transform: translateX(-50%);
+
   filter: blur(18px);
+
   pointer-events: none;
 }
 
 .tools-list .items:nth-child(3)::before {
   width: 520px;
   height: 520px;
+
   left: 72%;
   bottom: -230px;
 }
 
-.tools .items-txt {
+.tools .items-txt{
   line-height: 1.3;
 }
 
-/* ----- cases ----- */
-.cases-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+@media (max-width: 1199px) {
+  .tools {
+    padding: 96px 0;
+  }
 
-.cases-sublist {
-  list-style: disc;
-  padding-left: 20px;
+  .tools-list .items,
+  .tools-list .items:nth-child(3) {
+    display: block;
+    min-height: 0;
+    padding: 32px;
+  }
+
+  .tools-list .items:nth-child(1) .tools-img,
+  .tools-list .items:nth-child(2) .tools-img,
+  .tools-list .items:nth-child(3) .tools-img {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    display: block;
+    width: min(320px, 80%);
+    margin: 28px auto 0;
+    transform: none;
+  }
 }
 
 @media (max-width: 767px) {
-  .process-text {
-    margin-bottom: 48px;
-  }
-  .process.our-clients .title {
-    margin-bottom: 56px;
-  }
   .tools {
-    padding: 56px 0;
+    padding: 64px 0;
+  }
+
+  .tools .title {
+    margin-bottom: 32px;
+  }
+
+  .tools-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .tools-list .items,
+  .tools-list .items:nth-child(3) {
+    grid-column: auto;
+    display: block;
+    min-height: 0;
+    padding: 26px;
+  }
+
+  .tools-list .items:nth-child(1) .tools-img,
+  .tools-list .items:nth-child(2) .tools-img,
+  .tools-list .items:nth-child(3) .tools-img {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    display: block;
+    width: min(280px, 78%);
+    margin: 24px auto 0;
+    transform: none;
   }
 }
-/* ----- team ----- */
-/* ----- development ----- */
-/* ----- equipment ----- */
-/* ----- locations ----- */
-/* ----- how-we-work ----- */
-/* ----- audience ----- */
-/* ----- why-us ----- */
-/* ----- call-to-action ----- */
-
-/*# sourceMappingURL=pro_nas.css.map */

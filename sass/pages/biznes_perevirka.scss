@@ -1,32 +1,31 @@
+@import '../variables';
+
 /* ----- Hero in Base ----- */
 /* ----- Cases ----- */
 /* ----- Checks ----- */
-.checks .title {
+.checks .title{
   max-width: 650px;
 }
-
 /* ----- Benefits ----- */
 /* ----- Call-to-action in Base ----- */
 /* ----- research ----- */
-.research .title {
+.research .title{
   margin-bottom: 85px;
-  max-width: 685px;
+  max-width: 685px
 }
 
-.research-content {
+.research-content{
   display: flex;
   justify-content: space-between;
+
   padding: 70px 90px;
   border: var(--border);
   border-radius: var(--border-radius);
 }
 
-.research-text {
+.research-text{
   max-width: 400px;
   line-height: 1.5;
 }
-
 /* ----- Stages ----- */
 /* ----- Faq in base----- */
-
-/*# sourceMappingURL=biznes_perevirka.css.map */

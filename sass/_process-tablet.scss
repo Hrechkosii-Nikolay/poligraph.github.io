@@ -1,0 +1,29 @@
+/* Спільне горизонтальне розташування етапів на планшеті */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .process-list {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .process-list::before {
+    display: block;
+  }
+
+  .process-item {
+    padding-bottom: 70px;
+    padding-left: 40px;
+  }
+
+  .process-item::before {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    height: 320px;
+  }
+
+  .process-item::after {
+    top: auto;
+    bottom: -6px;
+    left: -5px;
+  }
+}

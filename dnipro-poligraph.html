@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Розслідування інцидентів</title>
+    <title>Поліграф у Дніпрі | Червона лінія</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -16,37 +16,37 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/rozsliduvannya_incydentiv.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/base.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
-<body>
+<body class="site-page has-mobile-menu">
   <header>
     <nav class="container main-nav">
       <a href="./index.html" class="logo">
         <img src="./img/logo.svg" alt="Логотип компанії">
       </a>
-      <ul class="menu-list">
-        <li class="menu-item"><a class="link" href="./index.html#services">Послуги</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Відкрити меню"><span></span><span></span><span></span></button>
+      <ul class="menu-list" id="mobile-menu">
+        <li class="menu-item has-submenu"><a class="link" href="./index.html#services">Послуги</a>
         <ul class="submenu">
           <li class="submenu-item"><a href="./perevirka_personalu.html">ТЕСТУВАННЯ ПЕРСОНАЛУ</a></li>
           <li class="submenu-item"><a href="./rozsliduvannya_incydentiv.html">РОЗСЛІДУВАННЯ ІНЦИДЕНТІВ</a></li>
           <li class="submenu-item"><a href="./perevirka_osobustogo_haraktery.html">ПЕРЕВІРКА ОСОБИСТОГО ХАРАКТЕРУ</a></li>
           <li class="submenu-item"><a href="./biznes_perevirka.html">БІЗНЕС-ПЕРЕВІРКИ</a></li>
-          <li class="submenu-item"><a href="./perevirka-z-vyizdom.html">ПЕРЕВІРКА З ВИЇЗДОМ</a></li>
+          <li class="submenu-item"><a href="./city-dnipro.html">ПЕРЕВІРКА З ВИЇЗДОМ</a></li>
           <li class="submenu-item"><a href="./perevirka_ec.html">ПЕРЕВІРКА ЗА КОРДОНОМ</a></li>
           <li class="submenu-item"><a href="./konsaltynh.html">Організація поліграфічної служби</a></li>
           <li class="submenu-item"><a href="./sudova_ekspertyza.html">СУДОВА ЕКСПЕРТИЗА</a></li>
         </ul>
         </li>
-        <li class="menu-item"><a class="link" href="">Локаціі в Україні</a>
+        <li class="menu-item has-submenu"><a class="link" href="">Локаціі в Україні</a>
           <ul class="submenu">
-            <li class="submenu-item"><a href="">Київ</a></li>
-            <li class="submenu-item"><a href="">Харків</a></li>
-            <li class="submenu-item"><a href="">Одеса</a></li>
-            <li class="submenu-item"><a href="">Дніпро</a></li>
-            <li class="submenu-item"><a href="">Львів</a></li>
-            <li class="submenu-item"><a href="">Вінниця</a></li>
+            <li class="submenu-item"><a href="./kyiv-poligraph.html">Київ</a></li>
+            <li class="submenu-item"><a href="./kharkiv-poligraph.html">Харків</a></li>
+            <li class="submenu-item"><a href="./odesa-poligraph.html">Одеса</a></li>
+            <li class="submenu-item"><a href="./dnipro-poligraph.html">Дніпро</a></li>
+            <li class="submenu-item"><a href="./lviv-poligraph.html">Львів</a></li>
+            <li class="submenu-item"><a href="./vinnytsia-poligraph.html">Вінниця</a></li>
           </ul>
         </li>
         <li class="menu-item"><a class="link" href="./index.html#price">Ціни</a></li>
@@ -62,11 +62,11 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero city-dnipro">
       <div class="container">
-        <h1 class="title hero-title">Розслідування </br> інцидентів</h1>
-        <p class="title hero-sub-title">Встановіть істину та знайдіть винних у будь-якій корпоративній ситуації.</p>
-        <p class="hero-txt">Крадіжки, витоки конфіденційної інформації, саботаж чи фінансові зловживання — кожен інцидент потребує об'єктивного розслідування. Тестування на поліграфі в «Червона лінія» дозволяє швидко встановити коло причетних осіб, відновити хронологію подій і отримати достовірні відповіді там, де звичайні методи виявляються недостатніми.</p>
+        <h1 class="title hero-title">Перевірка на поліграфі</br> у Дніпрі</h1>
+        <p class="title hero-subtitle">Перевірка на поліграфі у Дніпрі для приватних клієнтів, бізнесу та державних установ.</p>
+        <p class="hero-txt">У Дніпрі працюють власні фахівці «Червоної лінії», тому перевірку на поліграфі можна організувати без очікування виїзної команди з іншого міста. Для компаній і приватних клієнтів доступне тестування у погодженій локації Дніпра, а за потреби поліграфолог приїде до офісу, виробництва або додому з усім необхідним обладнанням.</p>
         <ul class="hero-features-list">
           <li class="hero-features-item">
             <div class="cta-icon-wrap">
@@ -119,27 +119,31 @@
       <div class="container about-us-wrapper">
         <div>
           <p class="section-label">Експертиза</p>
-          <h2  class="title">Розслідування інцидентів</h2>
+          <h2  class="title">Поліграф у Дніпрі</h2>
 
         </div>
         <ul class="about-us-list">
-          <li class="items"><p>І бізнес, і приватні особи регулярно стикаються зі ситуаціями, де потрібно швидко та коректно встановити істину. В умовах підвищених ризиків — крадіжок, витоків даних та інших інцидентів — традиційні підходи бувають повільними або малоефективними.</p></li>
-          <li class="items"><p>Поліграф дає можливість використати високоточний інструмент для прискореного з'ясування обставин: допомагає ідентифікувати винних і захистити не причетних. Оформити перевірку за справедливою ціною ви можете з командою <span class="accent">«Червоної лінії»</span>. За домовленістю наші фахівці готові виїхати до вас у зручне місце.</p></li>
+          <li class="items"><p>Послуги поліграфолога у Дніпрі обирають виробничі, торговельні та сервісні компанії, коли потрібно перевірити персонал або розглянути службовий інцидент. Також ми працюємо з особистими зверненнями, де цінуються тактовність і чітка процедура.</p></li>
+          <li class="items"><p>Перевірка може бути організована в офісі замовника або іншому погодженому місці у Дніпрі. Ми заздалегідь узгоджуємо формат, тривалість і теми запитань, щоб дослідження було коректним, а висновок — зрозумілим для подальшого рішення.</p></li>
         </ul>
       </div>
     </section>
     <section class="process">
       <div class="container">
         <p class="section-label">Етапи</p>
-        <h2 class="title">Як ми проводимо <span class="accent">розслідування</span></h2>
+        <h2 class="title">Як проходить перевірка <span class="accent">у Дніпрі</span></h2>
         <ul class="process-list">
           <li class="process-item">
+            <h3 class="process-item-title">Виїзд до вашої локації</h3>
+            <p class="process-item-text">У погоджений час наш фахівець прибуває до вас із професійним обладнанням та готує місце для проведення перевірки.</p>
+          </li>
+          <li class="process-item">
             <h3 class="process-item-title">Початкова консультація</h3>
-            <p class="process-item-text">Розбираємо ваш випадок, окреслюємо ключові запитання та цілі перевірки.</p>
+            <p class="process-item-text">Уточнюємо обставини, визначаємо мету перевірки та погоджуємо перелік запитань.</p>
           </li>
           <li class="process-item">
             <h3 class="process-item-title">Тестування на поліграфі</h3>
-            <p class="process-item-text">Оцінюємо реакції людини на критично важливі формулювання та запитання.</p>
+            <p class="process-item-text">Проводимо дослідження відповідно до професійних стандартів із використанням сертифікованого обладнання.</p>
           </li>
           <li class="process-item">
             <h3 class="process-item-title">Звіт і висновки</h3>
@@ -211,98 +215,105 @@
       </div>
     </section>
     <section class="cases">
-      <div class="container">
-        <p class="section-label">кейси</p>
-        <h2 class="title">Коли доцільно проводити <span class="accent">розслідування?</span></h2>
-        <ul class="cases-list">
-          <li class="cases-item">
-            <div class="icon-wrap cases-icon-wrap">
-              <svg class="icon" width="35" height="35">
-                 <use href="./img/sprite.svg#search"></use>
-              </svg>
-           </div>
-            <h3 class="cases-item-title">Внутрішні перевірки</h3>
-            <p class="cases-item-text">Конфлікти, крадіжки, витоки інформації та інші порушення в компаніях потребують швидкого й точного розбору.</p>
-          </li>
-          <li class="cases-item">
-            <div class="icon-wrap cases-icon-wrap">
-              <svg class="icon" width="35" height="35">
-                 <use href="./img/sprite.svg#car-building"></use>
-              </svg>
-           </div>
-            <h3 class="cases-item-title">Пошкодження майна</h3>
-            <p class="cases-item-text">Вандалізм, псування обладнання чи меблів — тестування дозволяє оперативно встановити відповідальних для подальшої компенсації збитків</p>
-          </li>
-          <li class="cases-item">
-            <div class="icon-wrap cases-icon-wrap">
-              <svg class="icon" width="35" height="35">
-                 <use href="./img/sprite.svg#coins-shield"></use>
-              </svg>
-           </div>
-            <h3 class="cases-item-title">Крадіжки та фінансові махінації</h3>
-            <p class="cases-item-text">Перевірка на поліграфі дає змогу визначити учасників і попередити повторення інцидентів</p>
-          </li>
-          <li class="cases-item">
-            <div class="icon-wrap cases-icon-wrap">
-              <svg class="icon" width="35" height="35">
-                 <use href="./img/sprite.svg#equality"></use>
-              </svg>
-           </div>
-            <h3 class="cases-item-title">Приватні й досудові провадження</h3>
-            <p class="cases-item-text">Поліграф допомагає виявляти розбіжності та відбирати надійних очевидців.</p>
-          </li>
-          <li class="cases-item">
-            <div class="icon-wrap cases-icon-wrap">
-              <svg class="icon" width="35" height="35">
-                 <use href="./img/sprite.svg#book-svgrepo-com"></use>
-              </svg>
-           </div>
-            <h3 class="cases-item-title">Дисциплінарні проступки</h3>
-            <p class="cases-item-text">Порушення правил і статутів перевіряються на предмет відповідності фактам, що сприяє об'єктивним рішенням</p>
-          </li>
-        </ul>
-      </div>
+  <div class="container">
+    <p class="section-label">кейси</p>
+    <h2 class="title">Коли варто замовити <span class="accent">поліграф у Дніпрі?</span></h2>
+    <ul class="cases-list">
+      <li class="cases-item">
+        <div class="icon-wrap cases-icon-wrap">
+          <svg class="icon" width="35" height="35">
+            <use href="./img/sprite.svg#buildings"></use>
+          </svg>
+        </div>
+        <h3 class="cases-item-title">Перевірка в офісі компанії</h3>
+        <p class="cases-item-text">Проводимо тестування співробітників безпосередньо на території підприємства без відриву від робочого процесу.</p>
+      </li>
+
+      <li class="cases-item">
+        <div class="icon-wrap cases-icon-wrap">
+          <svg class="icon" width="35" height="35">
+            <use href="./img/sprite.svg#car-building"></use>
+          </svg>
+        </div>
+        <h3 class="cases-item-title">Виїзд до приватного клієнта</h3>
+        <p class="cases-item-text">Організовуємо перевірку вдома або в іншому зручному місці, забезпечуючи комфорт і повну конфіденційність.</p>
+      </li>
+
+      <li class="cases-item">
+        <div class="icon-wrap cases-icon-wrap">
+          <svg class="icon" width="35" height="35">
+            <use href="./img/sprite.svg#clock-svgrepo-com"></use>
+          </svg>
+        </div>
+        <h3 class="cases-item-title">Обмежений час</h3>
+        <p class="cases-item-text">Якщо немає можливості приїхати до офісу, ми самі прибудемо у погоджений час і проведемо перевірку на місці.</p>
+      </li>
+
+      <li class="cases-item">
+        <div class="icon-wrap cases-icon-wrap">
+          <svg class="icon" width="35" height="35">
+            <use href="./img/sprite.svg#geo-alt"></use>
+          </svg>
+        </div>
+        <h3 class="cases-item-title">Виїзд в інше місто</h3>
+        <p class="cases-item-text">За попередньою домовленістю проводимо перевірки по всій Україні з виїздом до замовника.</p>
+      </li>
+
+      <li class="cases-item">
+        <div class="icon-wrap cases-icon-wrap">
+          <svg class="icon" width="35" height="35">
+            <use href="./img/sprite.svg#lock"></use>
+          </svg>
+        </div>
+        <h3 class="cases-item-title">Конфіденційні перевірки</h3>
+        <p class="cases-item-text">Коли важливо зберегти приватність, проводимо тестування у погодженій локації без необхідності відвідувати наш офіс.</p>
+      </li>
+    </ul>
+  </div>
     </section>
     <section class="benefits">
       <div class="container">
         <p class="section-label">Переваги</p>
-        <h2 class="title">Переваги використання поліграфа у <span class="accent">розслідуваннях</span></h2>
+        <h2 class="title">Переваги <span class="accent">поліграфа у Дніпрі</span></h2>
         <ul class="benefits-list">
           <li class="benefits-item">
-               <div class="icon-wrap benefits-icon-wrap">
-                <svg class="icon" width="35" height="35">
-                   <use href="./img/sprite.svg#stats"></use>
-                </svg>
-             </div>
-            <h3 class="benefits-item-title">Висока точність результатів</h3>
-            <p class="benefits-item-text">Технологія спирається на наукові підходи: обладнання фіксує фізіологічні реакції, що дозволяє розділяти правдиві та хибні твердження;</p>
+            <div class="icon-wrap benefits-icon-wrap">
+              <svg class="icon" width="35" height="35">
+                <use href="./img/sprite.svg#time-check"></use>
+              </svg>
+            </div>
+            <h3 class="benefits-item-title">Економія вашого часу</h3>
+            <p class="benefits-item-text">Вам не потрібно витрачати час на дорогу до офісу — наші фахівці самі приїдуть у погоджене місце.</p>
           </li>
+    
           <li class="benefits-item">
-               <div class="icon-wrap benefits-icon-wrap">
-                <svg class="icon" width="35" height="35">
-                   <use href="./img/sprite.svg#equality"></use>
-                </svg>
-             </div>
-            <h3 class="benefits-item-title">Неупередженість</h3>
-            <p class="benefits-item-text">Реакції реєструє техніка, а аналіз виконує експерт — мінімізуємо суб'єктивний чинник.</p>
+            <div class="icon-wrap benefits-icon-wrap">
+              <svg class="icon" width="35" height="35">
+                <use href="./img/sprite.svg#shield-check"></use>
+              </svg>
+            </div>
+            <h3 class="benefits-item-title">Комфорт і конфіденційність</h3>
+            <p class="benefits-item-text">Перевірка проводиться у звичній для вас обстановці або на території вашої компанії з дотриманням повної конфіденційності.</p>
           </li>
+    
           <li class="benefits-item">
-               <div class="icon-wrap benefits-icon-wrap">
-                <svg class="icon" width="35" height="35">
-                   <use href="./img/sprite.svg#clock-svgrepo-com"></use>
-                </svg>
-             </div>
-            <h3 class="benefits-item-title">Швидкість отримання висновків</h3>
-            <p class="benefits-item-text">Те, що зазвичай займає тижні, з поліграфом вирішується значно швидше: ви отримуєте інформацію для подальших невідкладних дій.</p>
+            <div class="icon-wrap benefits-icon-wrap">
+              <svg class="icon" width="35" height="35">
+                <use href="./img/sprite.svg#clock-svgrepo-com"></use>
+              </svg>
+            </div>
+            <h3 class="benefits-item-title">Оперативний виїзд</h3>
+            <p class="benefits-item-text">Погоджуємо дату та час проведення перевірки, щоб вона відбулася максимально швидко та без затримок.</p>
           </li>
+    
           <li class="benefits-item">
-               <div class="icon-wrap benefits-icon-wrap">
-                <svg class="icon" width="35" height="35">
-                   <use href="./img/sprite.svg#list-check"></use>
-                </svg>
-             </div>
-            <h3 class="benefits-item-title">Гнучкість застосування</h3>
-            <p class="benefits-item-text">Підходить для індивідуальних, корпоративних і змішаних кейсів.</p>
+            <div class="icon-wrap benefits-icon-wrap">
+              <svg class="icon" width="35" height="35">
+                <use href="./img/sprite.svg#diploma"></use>
+              </svg>
+            </div>
+            <h3 class="benefits-item-title">Той самий професійний рівень</h3>
+            <p class="benefits-item-text">Виїзне тестування проводиться на тому ж сертифікованому обладнанні та за тими ж методиками, що й у нашому офісі.</p>
           </li>
         </ul>
       </div>
@@ -310,15 +321,15 @@
     <section class="research">
       <div class="container">
         <p class="section-label">Процес</p>
-        <h2 class="title">Як організовано<br>Дослідження<span class="accent">?</span></h2>
+        <h2 class="title">Як організовано<br>перевірку у Дніпрі<span class="accent">?</span></h2>
         <div class="research-card">
           <div class="research-col">
-            <h3 class="research-col-title">Процедура</h3>
-            <p class="research-col-text">Робота з поліграфом — це продумана процедура з попередньою підготовкою, індивідуальним налаштуванням обладнання та адаптацією під конкретну людину. Основна частина тесту зазвичай триває близько двох годин, після чого експерт проводить детальний аналіз і надає звіт з високим рівнем достовірності.</p>
+            <h3 class="research-col-title">Робочий сценарій</h3>
+            <p class="research-col-text">У Дніпрі корпоративні перевірки часто потребують чіткого плану. Ми погоджуємо порядок учасників, часові проміжки та вимоги до приміщення, щоб зберегти робочий ритм підприємства.</p>
           </div>
           <div class="research-col">
-            <h3 class="research-col-title">Конфіденційність</h3>
-            <p class="research-col-text">Якщо вам потрібне ефективне розслідування витоків, крадіжок або інших інцидентів, звертайтеся до фахівців «Червоної лінії».</p>
+            <h3 class="research-col-title">Аналітика даних</h3>
+            <p class="research-col-text">Висновок за результатами поліграфа у Дніпрі готується після аналізу реакцій на кожну погоджену тему. Це дає замовнику структуровану основу для кадрового чи управлінського рішення.</p>
           </div>
         </div>
       </div>
@@ -326,27 +337,31 @@
     <section class="faq">
       <div class="container">
         <p class="section-label">faq</p>
-        <h2 class="title">Часті запитання</h2>
+        <h2 class="title">Поліграф у Дніпрі: часті запитання</h2>
         <ul class="faq-list">
           <li class="faq-item">
-            <h3 class="faq-question">Чи можна використовувати поліграф для розслідування крадіжок на підприємстві?</h3>
-            <p class="faq-answer">Так. Тестування дозволяє перевірити причетність конкретних осіб до крадіжки, встановити обізнаність співробітників про інцидент та виявити тих, хто приховує важливу інформацію. Це значно звужує коло підозрюваних і прискорює розслідування.</p>
+            <h3 class="faq-question">Чи можна організувати поліграф для команди у Дніпрі?</h3>
+            <p class="faq-answer">Так. Для корпоративного запиту погоджуємо графік, кількість учасників і послідовність перевірок так, щоб мінімізувати вплив на робочий процес.</p>
           </li>
+    
           <li class="faq-item">
-            <h3 class="faq-question">Як поліграф допомагає розслідувати витік конфіденційних даних?</h3>
-            <p class="faq-answer">Під час тестування перевіряється обізнаність співробітників щодо обставин витоку, їхній доступ до захищеної інформації та можливі контакти з конкурентами чи третіми сторонами. Це дозволяє встановити джерело витоку та запобігти повторним інцидентам.</p>
+            <h3 class="faq-question">У яких місцях можна провести виїзну перевірку?</h3>
+            <p class="faq-answer">Тестування може бути організоване в офісі, вдома або в іншій погодженій локації, де можливо забезпечити спокійну обстановку та комфортні умови для проведення дослідження.</p>
           </li>
+    
           <li class="faq-item">
-            <h3 class="faq-question">Чи ефективний поліграф при розслідуванні фінансових зловживань?</h3>
-            <p class="faq-answer">Так. Тестування допомагає виявити осіб, причетних до несанкціонованих фінансових операцій, підробки документів чи привласнення коштів. Отримані результати дозволяють сформувати доказову базу та ухвалити обґрунтовані рішення щодо винних.</p>
+            <h3 class="faq-question">Чи відрізняється якість виїзної перевірки від перевірки в офісі?</h3>
+            <p class="faq-answer">Ні. Ми використовуємо те саме сертифіковане обладнання та дотримуємося однакових професійних методик, тому точність і якість дослідження залишаються незмінними.</p>
           </li>
+    
           <li class="faq-item">
-            <h3 class="faq-question">Чи можна застосовувати поліграф для розслідування саботажу виробничих процесів?</h3>
-            <p class="faq-answer">Так. Тестування дозволяє встановити, хто з працівників міг навмисно пошкодити обладнання, порушити технологічні процеси або передати стратегічну інформацію конкурентам. Це допомагає швидко виявити винних і мінімізувати подальші збитки для підприємства.</p>
+            <h3 class="faq-question">Чи здійснюєте ви виїзд в інші міста України?</h3>
+            <p class="faq-answer">Так. За попередньою домовленістю наші фахівці виїжджають до клієнтів по всій території України. Умови та вартість виїзду узгоджуються індивідуально.</p>
           </li>
+    
           <li class="faq-item">
-            <h3 class="faq-question">Чи можна використовувати поліграф для перевірки подружньої вірності?</h3>
-            <p class="faq-answer">Так. Тестування дозволяє отримати достовірні відповіді на питання щодо подружньої зради, прихованих стосунків чи інших обставин, які підривають довіру у сім'ї. Процедура проводиться конфіденційно та з дотриманням етичних норм, що забезпечує комфорт для обох сторін.</p>
+            <h3 class="faq-question">Що потрібно підготувати перед приїздом фахівця?</h3>
+            <p class="faq-answer">Достатньо забезпечити тихе приміщення, де ніхто не заважатиме проведенню тестування. Усе необхідне обладнання для перевірки ми привозимо із собою.</p>
           </li>
         </ul>
       </div>
@@ -557,5 +572,6 @@
   <script src="js/year.js"></script>
   <script src="js/form-notification.js"></script>
   <script src="js/phone-click.js"></script>
+  <script src="js/mobile-menu.js"></script>
 </body>
 </html>
