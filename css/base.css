@@ -545,10 +545,10 @@ button:focus {
 .process-item::before {
   content: "";
   position: absolute;
-  /* Починається на рівні номера, не перетинаючи текст етапу. */
+  /* Починається від номера та завершується на червоній осі етапів. */
   left: 0;
-  top: 72px;
-  bottom: 0;
+  top: 0;
+  bottom: 70px;
   width: 1px;
   background: #444444;
 }
@@ -2138,8 +2138,8 @@ button:focus {
     padding-left: 40px;
   }
   .process-item::before {
-    top: 72px;
-    bottom: 0;
+    top: 0;
+    bottom: 70px;
     left: 0;
   }
   .process-item::after {
