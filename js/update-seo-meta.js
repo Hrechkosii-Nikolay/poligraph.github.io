@@ -129,6 +129,11 @@ for (const [file, seo] of Object.entries(pages)) {
     `<meta name="keywords" content="${seo.keywords}">`,
     '<meta name="robots" content="index, follow">',
     `<link rel="canonical" href="${canonical}">`,
+    '<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">',
+    '<link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg">',
+    '<link rel="shortcut icon" href="/img/favicon/favicon.ico">',
+    '<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">',
+    '<link rel="manifest" href="/site.webmanifest">',
     `<meta property="og:locale" content="uk_UA">`,
     `<meta property="og:type" content="${seo.type || 'website'}">`,
     `<meta property="og:title" content="${seo.title}">`,
@@ -147,7 +152,7 @@ for (const [file, seo] of Object.entries(pages)) {
   html = html.replace(/<html\b[^>]*>/i, '<html lang="uk">');
   html = html
     .replace(/^\s*<meta\s+(?:name|property)=["'](?:description|keywords|robots|theme-color|twitter:card|og:[^"']+)["'][^>]*>\s*\n?/gim, '')
-    .replace(/^\s*<link\s+rel=["']canonical["'][^>]*>\s*\n?/gim, '');
+    .replace(/^\s*<link\s+rel=["'](?:canonical|icon|shortcut icon|apple-touch-icon|manifest)["'][^>]*>\s*\n?/gim, '');
   html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${seo.title}</title>\n  ${meta}`);
   fs.writeFileSync(filePath, html);
 }
