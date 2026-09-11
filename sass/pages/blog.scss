@@ -22,6 +22,17 @@
   margin-bottom: 65px;
 }
 
+/* Сторінка списку статей не потребує повноекранного hero. */
+.blog-page .hero {
+  height: auto;
+  min-height: 0;
+  padding-bottom: 72px;
+}
+
+.blog-page .hero-txt {
+  margin-bottom: 0;
+}
+
 .article-page .hero {
   height: auto;
   min-height: 100vh;
@@ -86,6 +97,15 @@
     margin-left: auto;
     padding-left: 0;
     border-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-page .hero-title,
+  .article-page .hero-title {
+    font-size: 40px;
+    line-height: 1.1em;
     text-align: center;
   }
 }
