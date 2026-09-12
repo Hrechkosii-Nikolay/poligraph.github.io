@@ -1,0 +1,6 @@
+
+# Private encrypted credentials
+secrets.txt
+secrets.enc
+.secrets.tmp
+secrets.enc.new

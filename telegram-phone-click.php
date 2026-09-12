@@ -47,6 +47,8 @@ $time=date('d.m.Y H:i');
 
 $token = "8328352877:AAGGDQx9GUeSeGQDt7ply6swkNCRc0TS7Gc";
 $chat_id = "-1003789979524";
+// $token = "8999707461:AAEqe0VC4gansW35BhKoi50e-nHkyc8H7ic";
+// $chat_id = "-5597887752";
 
 $txt="📞 <b>Клік по номеру телефону</b>\n\n";
 $txt.="☎️ <b>Номер:</b> $phone_clicked\n\n";

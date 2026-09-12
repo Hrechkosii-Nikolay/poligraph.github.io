@@ -11,7 +11,7 @@ const organization = {
   logo: `${siteUrl}/img/logo.svg`,
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+380501234567',
+    telephone: '+380935079503',
     contactType: 'Customer Support',
     areaServed: 'UA',
     availableLanguage: ['Ukrainian'],
@@ -26,7 +26,7 @@ const professionalService = {
   url: `${siteUrl}/`,
   logo: `${siteUrl}/img/logo.svg`,
   description: 'Професійні перевірки на поліграфі для бізнесу та приватних клієнтів в Україні.',
-  telephone: '+380501234567',
+  telephone: '+380935079503',
   priceRange: '3000-10000 UAH',
   address: {
     '@type': 'PostalAddress',

@@ -1,4 +1,8 @@
 <?php
+
+/* https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXXXXX/getUpdates,
+где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
+
 ini_set('display_errors',1);
 error_reporting(E_ALL);
 header('Content-Type: application/json; charset=utf-8');
@@ -73,8 +77,10 @@ if($res){
 date_default_timezone_set('Europe/Kyiv');
 $time=date('d.m.Y H:i');
 
-$token = "8328352877:AAGGDQx9GUeSeGQDt7ply6swkNCRc0TS7Gc";
-$chat_id = "-1003789979524";
+// $token = "8328352877:AAGGDQx9GUeSeGQDt7ply6swkNCRc0TS7Gc";
+// $chat_id = "-1003789979524";
+$token = "8999707461:AAEqe0VC4gansW35BhKoi50e-nHkyc8H7ic";
+$chat_id = "-5597887752";
 
 $txt="📥 <b>Нова заявка</b>\n\n";
 $txt.="👤 <b>Ім'я:</b> $name\n";
