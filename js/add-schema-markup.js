@@ -56,7 +56,7 @@ const servicePages = {
   'biznes_perevirka.html': 'Бізнес-перевірка на поліграфі',
   'konsaltynh.html': 'Організація поліграфологічної служби під ключ',
   'perevirka-z-vyizdom.html': 'Перевірка на поліграфі з виїздом',
-  'perevirka_ec.html': 'Перевірка на поліграфі в країнах ЄС',
+  'perevirka_ec.html': 'Перевірка на поліграфі в будь-якій країні світу',
   'perevirka_osobustogo_haraktery.html': 'Перевірка на поліграфі особистого характеру',
   'perevirka_personalu.html': 'Перевірка персоналу на поліграфі',
   'rozsliduvannya_incydentiv.html': 'Розслідування інцидентів на поліграфі',
@@ -121,7 +121,9 @@ function schemaFor(file) {
       name: servicePages[file],
       url: `${siteUrl}/${file}`,
       provider: { '@id': `${siteUrl}/#professional-service` },
-      areaServed: { '@type': 'Country', name: 'Україна' },
+      areaServed: file === 'perevirka_ec.html'
+        ? { '@type': 'Place', name: 'Увесь світ' }
+        : { '@type': 'Country', name: 'Україна' },
       availableLanguage: 'uk',
     };
   }
