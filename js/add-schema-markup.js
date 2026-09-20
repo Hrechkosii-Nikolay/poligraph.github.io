@@ -54,7 +54,7 @@ const professionalService = {
 
 const servicePages = {
   'biznes_perevirka.html': 'Бізнес-перевірка на поліграфі',
-  'konsaltynh.html': 'Організація поліграфічної служби під ключ',
+  'konsaltynh.html': 'Організація поліграфологічної служби під ключ',
   'perevirka-z-vyizdom.html': 'Перевірка на поліграфі з виїздом',
   'perevirka_ec.html': 'Перевірка на поліграфі в країнах ЄС',
   'perevirka_osobustogo_haraktery.html': 'Перевірка на поліграфі особистого характеру',
