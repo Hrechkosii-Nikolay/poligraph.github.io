@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /telegram.php
+Disallow: /js/
+Disallow: /css/
+Disallow: /img/
+Disallow: /fonts/
+Sitemap: https://red-line.com.ua/sitemap.xml

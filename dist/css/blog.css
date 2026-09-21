@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* ----- Hero ----- */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/poligraph-news_bg.jpg);
+}
+
+.hero-title {
+  font-size: 70px;
+  margin-bottom: 35px;
+}
+
+.hero-sub-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+  max-width: 565px;
+}
+
+.hero-txt {
+  max-width: 600px;
+  margin-bottom: 65px;
+}
+
+/* Сторінка списку статей не потребує повноекранного hero. */
+.blog-page .hero {
+  height: auto;
+  min-height: 0;
+  padding-bottom: 72px;
+}
+
+.blog-page .hero-txt {
+  margin-bottom: 0;
+}
+
+.article-page .hero {
+  height: auto;
+  min-height: 100vh;
+}
+
+.hero-article-content {
+  max-width: 645px;
+  padding: 24px 0 0 20px;
+  border-left: 1px solid rgba(255, 0, 43, 0.5);
+  line-height: 1.55;
+}
+
+.hero-article-heading {
+  margin: 0 0 14px;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.hero-article-content p + p {
+  margin-top: 14px;
+}
+
+@media (min-width: 1200px) {
+  .article-page .article-text {
+    max-width: none;
+    text-align: justify;
+  }
+  .article-page .hero-article-content {
+    max-width: 900px;
+    text-align: justify;
+  }
+}
+@media (max-width: 1199px) {
+  .article-page .hero .container,
+  .article-page .article .container {
+    text-align: center;
+  }
+  .article-page .hero-article-content {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid rgba(255, 0, 43, 0.5);
+  }
+  .article-page .article-title {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .article-page .article-title::after {
+    right: 0;
+    margin: auto;
+  }
+  .article-page .article-text {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    border-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .blog-page .hero-title,
+  .article-page .hero-title {
+    font-size: 40px;
+    line-height: 1.1em;
+    text-align: center;
+  }
+}
+/* ----- article ----- */
+.article-title {
+  position: relative;
+  max-width: 400px;
+  font-size: 38px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  padding-bottom: 18px;
+}
+
+.article-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 72px;
+  height: 2px;
+  background-color: #c90000;
+  box-shadow: 0 0 12px rgba(255, 0, 43, 0.75);
+}
+
+.article-text {
+  line-height: 1.5;
+  max-width: 650px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 0, 43, 0.4);
+}
+
+.article-text + .article-text {
+  margin-top: 16px;
+}
+
+.article-subtitle {
+  margin-top: 36px;
+  margin-bottom: 18px;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.article-date {
+  display: inline-flex;
+  padding: 8px 14px;
+  margin-top: 24px;
+  border: 1px solid rgba(255, 0, 43, 0.45);
+  border-radius: 100px;
+  color: #c90000;
+  font-size: 14px;
+}
+
+.article-link {
+  display: table;
+  margin-top: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #c90000;
+  color: #c90000;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.article-title a {
+  transition: color 0.25s ease;
+}
+
+.article-title a:hover,
+.article-title a:focus {
+  color: #c90000;
+}
+
+/* ----- call-to-action ----- */
+
+/*# sourceMappingURL=blog.css.map */
