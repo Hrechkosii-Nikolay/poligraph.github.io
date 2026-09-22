@@ -79,7 +79,7 @@ RewriteRule ^(.+)/$ /$1 [R=301,L]
     </FilesMatch>
 
     <FilesMatch "\.html$">
-        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Cache-Control "public, max-age=0, must-revalidate"
     </FilesMatch>
 
 </IfModule>

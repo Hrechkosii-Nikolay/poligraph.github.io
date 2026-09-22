@@ -278,6 +278,12 @@ body {
   line-height: 1.2;
 }
 
+main > section:not(.hero),
+.footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 800px;
+}
+
 .container {
   width: 100%;
   max-width: 1140px;
@@ -424,7 +430,7 @@ button:focus {
   position: relative;
   font-size: 12px;
   letter-spacing: 0.18em;
-  color: #c90000;
+  color: #ef3d3d;
   text-transform: uppercase;
 }
 
@@ -921,7 +927,7 @@ button:focus {
 }
 
 .accent {
-  color: #c90000;
+  color: #ef3d3d;
 }
 
 /*

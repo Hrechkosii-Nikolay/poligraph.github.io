@@ -30,6 +30,14 @@ body {
 
 }
 
+// Skip layout and paint for below-the-fold sections until they approach the
+// viewport. The intrinsic size keeps the scrollbar stable while they are skipped.
+main > section:not(.hero),
+.footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 800px;
+}
+
 .container{
   width: 100%;
   max-width: 1140px;
@@ -196,7 +204,7 @@ button:focus {
 
   font-size: 12px;
   letter-spacing: 0.18em;
-  color: $accent-color;
+  color: $accent-text-color;
   text-transform: uppercase;
 }
 .section-label::after {
@@ -797,7 +805,7 @@ line-height: 1.2;
 }
 
 .accent{
-  color: $accent-color;
+  color: $accent-text-color;
 }
 
 

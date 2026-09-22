@@ -1,6 +1,33 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('.main-nav');
 
+// The full stylesheets are applied asynchronously. Keep transitions disabled
+// until then to avoid animating the initial style calculation for every card.
+window.addEventListener('load', () => {
+  requestAnimationFrame(() => document.body.classList.remove('is-loading'));
+});
+
+const lazyFrames = document.querySelectorAll('iframe[data-lazy-src]');
+
+const loadFrame = (frame) => {
+  frame.src = frame.dataset.lazySrc;
+  frame.removeAttribute('data-lazy-src');
+};
+
+if ('IntersectionObserver' in window) {
+  const frameObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      loadFrame(entry.target);
+      observer.unobserve(entry.target);
+    });
+  }, { rootMargin: '300px 0px' });
+
+  lazyFrames.forEach((frame) => frameObserver.observe(frame));
+} else {
+  lazyFrames.forEach(loadFrame);
+}
+
 if (mainNav) {
   const submenuItems = mainNav.querySelectorAll('.menu-item.has-submenu');
   const locationsFooterLink = document.querySelector('.footer-item a[href="#locations"]');
