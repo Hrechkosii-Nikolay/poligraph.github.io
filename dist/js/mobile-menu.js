@@ -30,6 +30,8 @@ if ('IntersectionObserver' in window) {
 
 if (mainNav) {
   const submenuItems = mainNav.querySelectorAll('.menu-item.has-submenu');
+  const servicesMenuItem = submenuItems[0];
+  const servicesFooterLink = document.querySelector('.footer-item a[href$="#services"]');
   const locationsFooterLink = document.querySelector('.footer-item a[href="#locations"]');
 
   const closeSubmenus = () => {
@@ -101,6 +103,19 @@ if (mainNav) {
       }
     });
   });
+
+  if (servicesFooterLink && servicesMenuItem) {
+    servicesFooterLink.addEventListener('click', (event) => {
+      if (!window.matchMedia('(max-width: 767px)').matches) {
+        return;
+      }
+
+      event.preventDefault();
+      openMenu();
+      openSubmenu(servicesMenuItem);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 
   if (locationsFooterLink) {
     locationsFooterLink.addEventListener('click', (event) => {

@@ -22,4 +22,10 @@
 /* ----- stages ----- */
 /* ----- faq ----- */
 
+@media (max-width: 767px) {
+  .staff-testing-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
 
